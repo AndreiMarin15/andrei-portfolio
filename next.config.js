@@ -1,4 +1,20 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+const nextConfig = {
+	images: {
+		dangerouslyAllowSVG: true,
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "tailwindui.com",
+				pathname: "**"
+			},
+			{
+				protocol: "https",
+				hostname: "images.unsplash.com",
+				pathname: "**"
+			},
+		],
+	},
+};
+// 
+module.exports = nextConfig;
