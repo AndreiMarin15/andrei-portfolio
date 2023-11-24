@@ -34,6 +34,15 @@ const experiences = [
 export default function Experience() {
 	return (
 		<div className="w-2xl">
+			<div className=" flex-wrap sm:flex justify-center ">
+						<a
+							href="/assets/files/Resume-Andrei-Marin.pdf"
+							download
+							className="text-zinc-300 font-bold mb-2 underline sm:hidden"
+						>
+							Download Full Resume
+						</a>
+					</div>
 			<ul type="list" className="divide-y divide-gray-100">
 				{experiences.map((experience) => (
 					<li key={experience.position} className="flex justify-between gap-x-6 py-5">

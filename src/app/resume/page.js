@@ -22,12 +22,12 @@ const Resume = () => {
 				<div className="mx-auto  py-8 sm:py-10 lg:py-14">
 					<div className="mb-4 flex justify-center text-center">
 						<div className="md:mx-4">
-							<h3 className="text-2xl text-zinc-300 font-bold mb-2 tracking-wide">Summary</h3>
+							<h3 className=" text-2xl text-zinc-300 font-bold mb-2 tracking-wide">Summary</h3>
 
 							<a
 								href="/assets/files/Resume-Andrei-Marin.pdf"
 								download
-								className="text-zinc-300 font-bold mb-2 underline"
+								className="text-zinc-300 font-bold mb-2 underline hidden sm:block"
 							>
 								Full Resume
 							</a>
@@ -39,6 +39,7 @@ const Resume = () => {
 						</div>
 						<Skills />
 					</div>
+					
 				</div>
 				<div
 					className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
