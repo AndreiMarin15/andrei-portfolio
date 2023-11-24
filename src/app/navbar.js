@@ -8,7 +8,7 @@ import Link from "next/link";
 const navigation = [
 	{ name: "About me", href: "/" },
 	{ name: "Resume", href: "resume" },
-	{ name: "Github", href: "https://github.com/AndreiMarin15" },
+	//{ name: "Github", href: "https://github.com/AndreiMarin15" },
 ];
 
 export default function Navbar() {
