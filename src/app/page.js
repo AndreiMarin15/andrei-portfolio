@@ -29,49 +29,52 @@ export default function Home() {
 					/>
 				</div>
 				<div className="mx-auto max-w-2xl py-8 sm:py-10 lg:py-14">
-					<div className="mb-8 flex justify-center">
-						<div className="w-32 h-32 sm:w-52 sm:h-52 rounded-full overflow-hidden">
+					<div className="items-center mb-8 flex justify-center">
+						<div className="w-24 h-24 mx-3 sm:w-44 sm:h-44 rounded-full overflow-hidden">
 							<Image
 								src={content.image}
 								width={500}
 								height={500}
-								className="object-cover w-full h-full mb-10"
+								className="object-cover w-full h-full "
 								alt="pfp"
 							></Image>
 						</div>
-					</div>
-					<div className="text-center">
-						<h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
-							{content.name}
-							<br></br>{" "}
-							<span className="text-2xl sm:text-3xl text-teal-600 animate-pulse hover:animate-none cursor-default">
-								Web and Mobile Developer
-							</span>
-						</h1>
-						<p className="mt-8 text-sm sm:text-lg leading-8 text-zinc-300 ">{content.intro}</p>
-						<div className="pt-8 mx-4 flex justify-center">
-						<div className=" m-3 rounded-full ">
-							<SocialIcon url="https://www.facebook.com/Andrei.marinnnn/" bgColor="#008080" />
-						</div>
-						<div className=" m-3 rounded-full ">
-							<SocialIcon url="https://github.com/AndreiMarin15/" bgColor="#008080" />
-						</div>
-						<div className=" m-3 rounded-full ">
-							<SocialIcon url="https://www.linkedin.com/in/andrei-marin-6a338620a/" bgColor="#008080" />
-						</div>
-						<div className=" m-3 rounded-full ">
-							<SocialIcon url="https://www.instagram.com/dreimarinn/" bgColor="#008080" />
-						</div>
-						<div className=" m-3 rounded-full ">
-							<SocialIcon
-								url={`https://mail.google.com/mail/?view=cm&fs=1&to=andreimarin1622@gmail.com&su="Let's+Connect!"`}
-								bgColor="#008080"
-								network="mailto"
-							/>
+						<div className="mx-3" >
+							<h1 className=" text-2xl font-bold tracking-tight text-white sm:text-5xl">
+								{content.name}
+								<br></br>{" "}
+								<span className="text-base sm:text-3xl text-teal-600 animate-pulse hover:animate-none cursor-default">
+									Web and Mobile Developer
+								</span>
+							</h1>
 						</div>
 					</div>
+					<div className=" text-left sm:text-center">
+						<p className="text-justify sm:leading-loose sm:text-center mt-8 text-sm sm:text-lg leading-8 text-zinc-300 ">
+							{content.intro}
+						</p>
+						<div className=" pt-4 sm:pt-8 mx-4 max-w-xl flex justify-center">
+							<div className=" m-3 rounded-full ">
+								<SocialIcon url="https://www.facebook.com/Andrei.marinnnn/" bgColor="#008080" />
+							</div>
+							<div className=" m-3 rounded-full ">
+								<SocialIcon url="https://github.com/AndreiMarin15/" bgColor="#008080" />
+							</div>
+							<div className=" m-3 rounded-full ">
+								<SocialIcon url="https://www.linkedin.com/in/andrei-marin-6a338620a/" bgColor="#008080" />
+							</div>
+							<div className=" m-3 rounded-full ">
+								<SocialIcon url="https://www.instagram.com/dreimarinn/" bgColor="#008080" />
+							</div>
+							<div className=" m-3 rounded-full ">
+								<SocialIcon
+									url={`https://mail.google.com/mail/?view=cm&fs=1&to=andreimarin1622@gmail.com&su="Let's+Connect!"`}
+									bgColor="#008080"
+									network="mailto"
+								/>
+							</div>
+						</div>
 					</div>
-					
 				</div>
 				<div
 					className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
