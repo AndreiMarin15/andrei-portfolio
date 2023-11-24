@@ -50,7 +50,7 @@ export default function Home() {
 						</h1>
 						<p className="mt-8 text-sm sm:text-lg leading-8 text-zinc-300 ">{content.intro}</p>
 					</div>
-					<div className="pt-8 px-4 flex justify-center">
+					<div className="pt-8 mx-4 flex justify-center">
 						<div className=" m-3 rounded-full ">
 							<SocialIcon url="https://www.facebook.com/Andrei.marinnnn/" bgColor="#008080" />
 						</div>
