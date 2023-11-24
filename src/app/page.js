@@ -48,7 +48,7 @@ export default function Home() {
 								Web and Mobile Developer
 							</span>
 						</h1>
-						<p className="mt-8 text-lg leading-8 text-zinc-300 ">{content.intro}</p>
+						<p className="mt-8 text-sm sm:text-lg leading-8 text-zinc-300 ">{content.intro}</p>
 					</div>
 					<div className="pt-8 flex justify-center">
 						<div className=" m-3 rounded-full ">
