@@ -49,8 +49,7 @@ export default function Home() {
 							</span>
 						</h1>
 						<p className="mt-8 text-sm sm:text-lg leading-8 text-zinc-300 ">{content.intro}</p>
-					</div>
-					<div className="pt-8 mx-4 flex justify-center">
+						<div className="pt-8 mx-4 flex justify-center">
 						<div className=" m-3 rounded-full ">
 							<SocialIcon url="https://www.facebook.com/Andrei.marinnnn/" bgColor="#008080" />
 						</div>
@@ -71,6 +70,8 @@ export default function Home() {
 							/>
 						</div>
 					</div>
+					</div>
+					
 				</div>
 				<div
 					className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
