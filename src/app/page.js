@@ -65,7 +65,7 @@ export default function Home() {
 						</div>
 						<div className=" m-3 rounded-full ">
 							<SocialIcon
-								url={`https://gmail.com/mail/?view=cm&fs=1&to=andreimarin1622@gmail.com&su="Let's+Connect!"`}
+								url={`https://mailgoogle.com/mail/?view=cm&fs=1&to=andreimarin1622@gmail.com&su="Let's+Connect!"`}
 								bgColor="#008080"
 								network="mailto"
 							/>
