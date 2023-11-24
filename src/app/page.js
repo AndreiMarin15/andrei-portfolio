@@ -52,7 +52,7 @@ export default function Home() {
 					</div>
 					<div className="pt-8 flex justify-center">
 						<div className=" m-3 rounded-full ">
-							<SocialIcon url="https://www.facebook.com/Andrei.marinnnn/" bgColor="#008080"/>
+							<SocialIcon url="https://www.facebook.com/Andrei.marinnnn/" bgColor="#008080" />
 						</div>
 						<div className=" m-3 rounded-full ">
 							<SocialIcon url="https://github.com/AndreiMarin15/" bgColor="#008080" />
@@ -63,8 +63,14 @@ export default function Home() {
 						<div className=" m-3 rounded-full ">
 							<SocialIcon url="https://www.instagram.com/dreimarinn/" bgColor="#008080" />
 						</div>
+						<div className=" m-3 rounded-full ">
+							<SocialIcon
+								url={`https://mail.google.com/mail/?view=cm&fs=1&to=andreimarin1622@gmail.com&su="Let's+Connect!"`}
+								bgColor="#008080"
+								network="mailto"
+							/>
+						</div>
 					</div>
-					
 				</div>
 				<div
 					className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
