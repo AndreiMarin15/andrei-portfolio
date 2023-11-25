@@ -30,7 +30,7 @@ export default function Home() {
 				</div>
 				<div className="mx-auto max-w-2xl py-8 sm:py-10 lg:py-14">
 					<div className="items-center mb-8 flex justify-center">
-						<div className="w-24 h-24 mx-3 sm:w-44 sm:h-44 rounded-full overflow-hidden">
+						<div className="w-24 h-24 mx-3 sm:w-44 sm:h-44 rounded-full overflow-hidden animate-slide-left">
 							<Image
 								src={content.image}
 								width={500}
@@ -38,8 +38,8 @@ export default function Home() {
 								className="object-cover w-full h-full "
 								alt="pfp"
 							></Image>
-						</div> 
-						<div className="mx-3" >
+						</div>
+						<div className="mx-3 animate-slide-right">
 							<h1 className=" text-2xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
 								{content.name}
 								<br></br>{" "}
@@ -50,23 +50,23 @@ export default function Home() {
 						</div>
 					</div>
 					<div className=" text-left sm:text-center">
-						<p className="text-justify sm:leading-loose sm:text-center mt-8 text-sm sm:text-lg leading-8 text-zinc-300 ">
+						<p className="animate-fade-in text-justify sm:leading-loose sm:text-center mt-8 text-sm sm:text-lg leading-8 text-zinc-300 ">
 							{content.intro}
 						</p>
-						<div className=" pt-4 sm:pt-8 mx-4 max-w-xl flex justify-center">
-							<div className=" m-3 rounded-full ">
+						<div className="pt-4 sm:pt-8 mx-4 max-w-xl flex justify-center animate-slide-bottom">
+							<div className="m-3 rounded-full">
 								<SocialIcon url="https://www.facebook.com/drei.marin/" bgColor="#008080" />
 							</div>
-							<div className=" m-3 rounded-full ">
+							<div className="m-3 rounded-full">
 								<SocialIcon url="https://github.com/AndreiMarin15/" bgColor="#008080" />
 							</div>
-							<div className=" m-3 rounded-full ">
+							<div className="m-3 rounded-full">
 								<SocialIcon url="https://www.linkedin.com/in/andrei-marin-6a338620a/" bgColor="#008080" />
 							</div>
-							<div className=" m-3 rounded-full ">
+							<div className="m-3 rounded-full">
 								<SocialIcon url="https://www.instagram.com/andreimar.in/" bgColor="#008080" />
 							</div>
-							<div className=" m-3 rounded-full ">
+							<div className="m-3 rounded-full">
 								<SocialIcon
 									url={`https://mail.google.com/mail/?view=cm&fs=1&to=andreimarin1622@gmail.com&su="Let's+Connect!"`}
 									bgColor="#008080"

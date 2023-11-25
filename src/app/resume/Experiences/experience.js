@@ -43,17 +43,17 @@ export default function Experience() {
 							Download Full Resume
 						</a>
 					</div>
-			<ul type="list" className="divide-y divide-gray-100">
+			<ul type="list" className="divide-y divide-teal-100  animate-fade-in">
 				{experiences.map((experience) => (
 					<li key={experience.position} className="flex justify-between gap-x-6 py-5">
 						<div className="flex min-w-0 gap-x-4">
 							<div className="min-w-0 flex-auto">
-								<p className="text-sm font-semibold leading-6 text-zinc-100">{experience.exp}</p>
+								<p className="text-sm font-semibold leading-6 text-teal-300">{experience.exp}</p>
 								<p className="mt-1 truncate text-xs leading-5 text-zinc-100">{experience.position}</p>
 							</div>
 						</div>
 						<div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-							<p className="text-sm leading-6 text-zinc-100">{experience.date}</p>
+							<p className="text-sm leading-6 text-teal-100">{experience.date}</p>
 						</div>
 					</li>
 				))}
