@@ -10,7 +10,8 @@ export default function Home() {
 	const content = {
 		name: "Hi! I'm Andrei",
 		intro:
-			"I'm currently an undergraduate taking up Bachelor of Science in Information Systems at De La Salle University. I'm all about tech and love building cool stuff, especially when it comes to mobile and web development. When I'm not coding, you can find me playing sports, going out with friends, doing org and academic responsibilities, or chilling at home while binge-watching my favorite shows. It's all about balance, right?",
+			"I'm currently an undergraduate taking up Bachelor of Science in Information Systems at De La Salle University. I'm all about tech and love building cool stuff, especially when it comes to mobile and web development. When I'm not coding, you can find me going out with friends, doing org and academic responsibilities, or chilling at home while watching my favorite shows. It's all about balance, right?",
+		info: "Well, that's pretty much it from me! Since you're here, why not explore my work on GitHub, connect with me on social media, or take a look at my resume? I appreciate your interest and look forward to connecting with you. Thank you!",
 		image: andrei,
 	};
 	return (
@@ -50,10 +51,17 @@ export default function Home() {
 						</div>
 					</div>
 					<div className=" text-left sm:text-center">
-						<p className="animate-fade-in text-justify sm:leading-loose sm:text-center mt-8 text-sm sm:text-lg leading-8 text-zinc-300 ">
+						<p className="animate-fade-in text-justify sm:leading-loose sm:text-center mt-6 text-xs sm:text-base leading-8 text-zinc-300 ">
 							{content.intro}
+							
+							
 						</p>
-						<div className="pt-4 sm:pt-8 mx-4 max-w-xl flex justify-center animate-slide-bottom">
+						<p className="animate-fade-in text-justify sm:leading-loose sm:text-center mt-2 text-xs sm:text-base leading-8 text-zinc-300 ">
+						
+							
+							{content.info}
+						</p>
+						<div className="mx-4 max-w-xl flex justify-center animate-slide-bottom">
 							<div className="m-3 rounded-full">
 								<SocialIcon url="https://www.facebook.com/drei.marin/" bgColor="#008080" />
 							</div>
@@ -73,6 +81,7 @@ export default function Home() {
 									network="mailto"
 								/>
 							</div>
+							<br></br>
 						</div>
 					</div>
 				</div>
