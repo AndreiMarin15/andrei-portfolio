@@ -55,7 +55,7 @@ export default function Home() {
 						</p>
 						<div className=" pt-4 sm:pt-8 mx-4 max-w-xl flex justify-center">
 							<div className=" m-3 rounded-full ">
-								<SocialIcon url="https://www.facebook.com/Andrei.marinnnn/" bgColor="#008080" />
+								<SocialIcon url="https://www.facebook.com/andreimar.in/" bgColor="#008080" />
 							</div>
 							<div className=" m-3 rounded-full ">
 								<SocialIcon url="https://github.com/AndreiMarin15/" bgColor="#008080" />
@@ -64,7 +64,7 @@ export default function Home() {
 								<SocialIcon url="https://www.linkedin.com/in/andrei-marin-6a338620a/" bgColor="#008080" />
 							</div>
 							<div className=" m-3 rounded-full ">
-								<SocialIcon url="https://www.instagram.com/dreimarinn/" bgColor="#008080" />
+								<SocialIcon url="https://www.instagram.com/andreimar.in/" bgColor="#008080" />
 							</div>
 							<div className=" m-3 rounded-full ">
 								<SocialIcon
