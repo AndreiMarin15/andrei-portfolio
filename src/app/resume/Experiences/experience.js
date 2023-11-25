@@ -53,7 +53,7 @@ export default function Experience() {
 							</div>
 						</div>
 						<div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-							<p className="text-sm leading-6 text-teal-100">{experience.date}</p>
+							<p className="text-sm leading-6 text-zinc-100">{experience.date}</p>
 						</div>
 					</li>
 				))}
