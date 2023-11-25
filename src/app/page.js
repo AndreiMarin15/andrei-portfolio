@@ -38,7 +38,7 @@ export default function Home() {
 								className="object-cover w-full h-full "
 								alt="pfp"
 							></Image>
-						</div>
+						</div> 
 						<div className="mx-3" >
 							<h1 className=" text-2xl font-bold tracking-tight text-white sm:text-5xl">
 								{content.name}
