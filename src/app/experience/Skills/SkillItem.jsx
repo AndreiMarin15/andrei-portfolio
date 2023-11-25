@@ -31,7 +31,7 @@ const SkillItem = (props) => {
     <div className="w-full md:w-1/2 animate-fade-in">
       <div className="mb-4 md:mx-4">
         <div className="flex justify-between items-center mb-1">
-          <h5 className="text-md text-teal-300 font-light">{title}</h5>
+          <h5 className="text-sm font-semibold leading-6 text-teal-300">{title}</h5>
           <span className="text-md text-zinc-100 font-bold">
             {percentage}
           </span>
@@ -39,7 +39,7 @@ const SkillItem = (props) => {
         <div className="w-full bg-teal-100 relative h-2 rounded">
           <div
             ref={barRef}
-            className="absolute h-full left-0 top-0 bg-teal-600 rounded"
+            className="absolute h-full left-0 top-0 bg-teal-700 rounded"
             style={{ width: "0%" }}
           ></div>
         </div>

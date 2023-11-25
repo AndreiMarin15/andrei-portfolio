@@ -2,8 +2,11 @@ import React from "react";
 import Skills from "./Skills/Skills";
 import Image from "next/image";
 import Experience from "./Experiences/experience";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
-const Resume = () => {
+import "@fortawesome/fontawesome-svg-core/styles.css";
+const Experiences = () => {
 	return (
 		<div className="bg-black">
 			<div className="relative isolate px-6 pt-14 lg:px-8">
@@ -21,15 +24,14 @@ const Resume = () => {
 				</div>
 				<div className="mx-auto  py-8 sm:py-10 lg:py-14">
 					<div className="mb-4 flex justify-center text-center">
-						<div className="md:mx-4">
-							<h3 className=" text-2xl text-zinc-300 font-bold mb-2 tracking-wide">Summary</h3>
-
+						<div className="md:mx-4 flex">
 							<a
 								href="/assets/files/Resume-Andrei-Marin.pdf"
 								download
-								className="text-zinc-300 font-bold mb-2 underline hidden sm:block"
+								className="text-zinc-300 font-bold mb-2 hidden sm:block"
 							>
-								Full Resume
+								Resume {"	"}
+								<FontAwesomeIcon icon={faDownload} />
 							</a>
 						</div>
 					</div>
@@ -57,4 +59,4 @@ const Resume = () => {
 	);
 };
 
-export default Resume;
+export default Experiences;

@@ -1,3 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
 const experiences = [
 	{
 		exp: "Baytech BPO",
@@ -35,13 +40,16 @@ export default function Experience() {
 	return (
 		<div className="w-2xl">
 			<div className=" flex-wrap sm:flex justify-center ">
+						
+
 						<a
-							href="/assets/files/Resume-Andrei-Marin.pdf"
-							download
-							className="text-zinc-300 font-bold mb-2 underline sm:hidden"
-						>
-							Download Full Resume
-						</a>
+								href="/assets/files/Resume-Andrei-Marin.pdf"
+								download
+								className="text-zinc-300 font-bold mb-2 sm:hidden"
+							>
+								Resume {"	"}
+								<FontAwesomeIcon icon={faDownload} />
+							</a>
 					</div>
 			<ul type="list" className="divide-y divide-teal-100  animate-fade-in">
 				{experiences.map((experience) => (
