@@ -14,7 +14,7 @@ const experiences = [
 		position: "Director for Student Services",
 		date: "October 2021 - January 2024",
 	},
-    {
+	{
 		exp: "DLSU USG - OSEC",
 		position: "Executive for Web Development",
 		date: "November 2021 - August 2024",
@@ -40,17 +40,11 @@ export default function Experience() {
 	return (
 		<div className="w-2xl">
 			<div className=" flex-wrap sm:flex justify-center ">
-						
-
-						<a
-								href="/assets/files/Resume-Andrei-Marin.pdf"
-								download
-								className="text-zinc-300 font-bold mb-2 sm:hidden"
-							>
-								Resume {"	"}
-								<FontAwesomeIcon icon={faDownload} />
-							</a>
-					</div>
+				<a href="/assets/files/Resume-Andrei-Marin.pdf" download className="text-zinc-300 font-bold mb-2 sm:hidden">
+					Resume {"	"}
+					<FontAwesomeIcon icon={faDownload} />
+				</a>
+			</div>
 			<ul type="list" className="divide-y divide-teal-100  animate-fade-in">
 				{experiences.map((experience) => (
 					<li key={experience.position} className="flex justify-between gap-x-6 py-5">
