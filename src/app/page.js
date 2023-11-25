@@ -55,7 +55,7 @@ export default function Home() {
 						</p>
 						<div className=" pt-4 sm:pt-8 mx-4 max-w-xl flex justify-center">
 							<div className=" m-3 rounded-full ">
-								<SocialIcon url="https://www.facebook.com/drei.main/" bgColor="#008080" />
+								<SocialIcon url="https://www.facebook.com/drei.marin/" bgColor="#008080" />
 							</div>
 							<div className=" m-3 rounded-full ">
 								<SocialIcon url="https://github.com/AndreiMarin15/" bgColor="#008080" />
