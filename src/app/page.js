@@ -40,7 +40,7 @@ export default function Home() {
 							></Image>
 						</div> 
 						<div className="mx-3" >
-							<h1 className=" text-2xl font-bold tracking-tight text-white sm:text-5xl">
+							<h1 className=" text-2xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
 								{content.name}
 								<br></br>{" "}
 								<span className="text-base sm:text-3xl text-teal-600 animate-pulse hover:animate-none cursor-default">
