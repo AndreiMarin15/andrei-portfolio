@@ -13,7 +13,7 @@ const navigation = [
 
 export default function Navbar() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+	
 
 	return (
 		<header className="absolute inset-x-0 top-0 z-50 bg-transparent">
