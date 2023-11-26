@@ -16,7 +16,7 @@ export default function Home() {
 	};
 	return (
 		<div className="bg-black">
-			<div className="relative isolate px-6 pt-14 lg:px-8">
+			<div className=" relative isolate px-6 pt-14 lg:px-8 max-w-fit lg:max-w-none max-h-fit lg:max-h-none">
 				<div
 					className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
 					aria-hidden="true"
@@ -53,21 +53,18 @@ export default function Home() {
 					<div className=" text-left sm:text-center">
 						<p className="animate-fade-in text-justify sm:leading-loose sm:text-center mt-6 text-xs sm:text-base leading-8 text-zinc-300 ">
 							{content.intro}
-							
-							
 						</p>
 						<p className="animate-fade-in text-justify sm:leading-loose sm:text-center mt-2 text-xs sm:text-base leading-8 text-zinc-300 ">
-						
-							
 							{content.info}
 						</p>
 						<div className="mx-4 max-w-xl flex justify-center animate-slide-bottom">
 							<div className="m-3 rounded-full">
-								<SocialIcon url="https://www.facebook.com/drei.marin/" bgColor="#008080" />
-							</div>
-							<div className="m-3 rounded-full">
 								<SocialIcon url="https://github.com/AndreiMarin15/" bgColor="#008080" />
 							</div>
+							<div className="m-3 rounded-full">
+								<SocialIcon url="https://www.facebook.com/drei.marin/" bgColor="#008080" />
+							</div>
+
 							<div className="m-3 rounded-full">
 								<SocialIcon url="https://www.linkedin.com/in/andrei-marin-6a338620a/" bgColor="#008080" />
 							</div>

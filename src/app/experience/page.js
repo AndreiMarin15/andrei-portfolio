@@ -35,10 +35,8 @@ const Experiences = () => {
 							</a>
 						</div>
 					</div>
-					<div className="mb-8 flex-wrap sm:flex justify-center">
-						<div className="px-5">
-							<Experience />
-						</div>
+					<div className="flex flex-col md:flex-row justify-center">
+						<Experience />
 						<Skills />
 					</div>
 				</div>
