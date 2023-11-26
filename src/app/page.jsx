@@ -16,7 +16,7 @@ export default function Home() {
 	};
 	return (
 		<div className="bg-black">
-			<div className=" relative isolate px-6 pt-14 lg:px-8">
+			<div className=" relative isolate px-6 pt-14 lg:px-8 h-fit">
 				<div
 					className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
 					aria-hidden="true"
@@ -101,7 +101,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div
-					className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+					className="hidden sm:block absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
 					aria-hidden="true"
 				>
 					<div
