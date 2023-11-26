@@ -6,8 +6,8 @@ import Navbar from "./navbar";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Andrei Marin - Portfolio',
-  description: 'c/o Misael Andrei C. Marin 2023',
+  title: 'Misael Andrei Marin',
+  description: 'Misael Andrei Marin - Developer',
 }
 
 export default function RootLayout({ children }) {
