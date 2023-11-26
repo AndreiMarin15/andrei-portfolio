@@ -38,6 +38,7 @@ export default function Home() {
 								height={500}
 								className="object-cover w-full h-full "
 								alt="pfp"
+								loading="lazy"
 							></Image>
 						</div>
 						<div className="mx-3 animate-slide-right">
