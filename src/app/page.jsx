@@ -60,15 +60,15 @@ export default function Home() {
 						</p>
 					</div>
 					<div className="content items-center mb-8 flex justify-center">
-						<div className="mx-4 max-w-xl flex justify-center animate-slide-bottom">
-							<div className="my-3 mr-1 rounded-full">
+						<div className="mx-4 max-w-xl flex justify-center">
+							<div className="my-3 mr-1 rounded-full animate-slide-bottom3">
 								<SocialIcon
 									style={{ height: 40, width: 40 }}
 									url="https://github.com/AndreiMarin15/"
 									bgColor="#008080"
 								/>
 							</div>
-							<div className="my-3 mx-1 rounded-full">
+							<div className="my-3 mx-1 rounded-full animate-slide-bottom2">
 								<SocialIcon
 									style={{ height: 40, width: 40 }}
 									url="https://www.facebook.com/drei.marin/"
@@ -76,21 +76,21 @@ export default function Home() {
 								/>
 							</div>
 
-							<div className="my-3 mx-1 rounded-full">
+							<div className="my-3 mx-1 rounded-full animate-slide-bottom1">
 								<SocialIcon
 									style={{ height: 40, width: 40 }}
 									url="https://www.linkedin.com/in/andrei-marin-6a338620a/"
 									bgColor="#008080"
 								/>
 							</div>
-							<div className="my-3 mx-1 rounded-full">
+							<div className="my-3 mx-1 rounded-full animate-slide-bottom2">
 								<SocialIcon
 									style={{ height: 40, width: 40 }}
 									url="https://www.instagram.com/andreimar.in/"
 									bgColor="#008080"
 								/>
 							</div>
-							<div className="my-3 ml-1 rounded-full">
+							<div className="my-3 ml-1 rounded-full animate-slide-bottom3">
 								<SocialIcon
 									style={{ height: 40, width: 40 }}
 									url={`https://mail.google.com/mail/?view=cm&fs=1&to=andreimarin1622@gmail.com&su="Let's+Connect!"`}

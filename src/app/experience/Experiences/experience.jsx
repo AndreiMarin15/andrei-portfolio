@@ -39,7 +39,7 @@ const experiences = [
 export default function Experience() {
 	return (
 		<div className="w-2xl">
-			<div className=" flex-wrap sm:flex justify-center ">
+			<div className=" flex-wrap sm:flex justify-center animate-slide-top">
 				<a href="/assets/files/Resume-Andrei-Marin.pdf" download className="text-zinc-300 font-bold mb-2 sm:hidden">
 					Resume {"	"}
 					<FontAwesomeIcon icon={faDownload} />

@@ -23,7 +23,7 @@ const Experiences = () => {
 				</div>
 				<div className="mx-auto  py-8 sm:py-10 lg:py-14">
 					<div className="mb-4 flex justify-center text-center">
-						<div className="md:mx-4 flex">
+						<div className="md:mx-4 flex animate-slide-top">
 							<a
 								href="/assets/files/Resume-Andrei-Marin.pdf"
 								download
