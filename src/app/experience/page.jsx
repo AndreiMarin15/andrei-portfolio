@@ -7,7 +7,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 const Experiences = () => {
 	return (
-		<div className="bg-black">
+		<div className="bg-black" style={{ height: "100VH" }}>
 			<div className="relative isolate px-6 pt-14 lg:px-8">
 				<div
 					className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -24,11 +24,7 @@ const Experiences = () => {
 				<div className="mx-auto  py-8 sm:py-10 lg:py-14">
 					<div className="mb-4 flex justify-center text-center">
 						<div className="md:mx-4 flex animate-slide-top">
-							<a
-								href="/assets/files/Resume-Andrei-Marin.pdf"
-								target="_blank"
-								className="text-zinc-300 font-bold mb-2 "
-							>
+							<a href="/assets/files/Resume-Andrei-Marin.pdf" target="_blank" className="text-zinc-300 font-bold mb-2 ">
 								View Resume {"	"}
 								<FontAwesomeIcon icon={faSearch} />
 							</a>
