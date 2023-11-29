@@ -30,6 +30,7 @@ export default function Home() {
 					/>
 				</div>
 				<div className="mx-auto py-8 sm:py-10 lg:py-14">
+				<div className="flex flex-col justify-center">
 					<div className="content items-center mb-8 flex justify-center">
 						<div className="w-24 h-24 mx-3 sm:w-44 sm:h-44 rounded-full overflow-hidden animate-slide-left">
 							<Image
@@ -100,6 +101,7 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
+				</div>
 				</div>
 				<div
 					className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
