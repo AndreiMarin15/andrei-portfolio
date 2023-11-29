@@ -30,7 +30,7 @@ export default function Navbar() {
 					</button>
 				</div>
 
-				<div className="hidden lg:flex lg:gap-x-12 animate-slide-left">
+				<div className="hidden lg:flex lg:gap-x-12 ">
 					{navigation.map((item) => (
 						<Link
 							key={item.name}

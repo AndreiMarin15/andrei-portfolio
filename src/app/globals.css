@@ -3,118 +3,115 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @keyframes slide-in-from-left {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
 }
 
 @keyframes slide-in-from-right {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
 }
 
 @keyframes slide-in-from-bottom {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 @keyframes slide-in-from-top {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
 @keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes slide-out-to-left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
 }
 
 .animate-slide-out-to-left {
-  animation: slide-out-to-left 0.5s forwards;
+	animation: slide-out-to-left 0.5s forwards;
 }
 
 .animate-fade-in {
-  animation: fade-in 1s forwards;
+	animation: fade-in 1s forwards;
 }
 
-
-
 .animate-slide-left {
-  animation: slide-in-from-left 1.5s forwards;
+	animation: slide-in-from-left 1.5s forwards;
 }
 
 .animate-slide-right {
-  animation: slide-in-from-right 1.8s forwards;
+	animation: slide-in-from-right 1.8s forwards;
 }
 
-.animate-slide-right-nav {
-  animation: slide-in-from-right 0.5s forwards;
-  transition: transform 0.3s ease-out;
-}
+
 
 .animate-slide-bottom1 {
-  animation: slide-in-from-bottom 1.2s forwards;
+	animation: slide-in-from-bottom 1.2s forwards;
 }
 
 .animate-slide-bottom2 {
-  animation: slide-in-from-bottom 1.5s forwards;
+	animation: slide-in-from-bottom 1.5s forwards;
 }
 
 .animate-slide-bottom3 {
-  animation: slide-in-from-bottom 1.8s forwards;
+	animation: slide-in-from-bottom 1.8s forwards;
 }
 
 .animate-slide-top {
-  animation: slide-in-from-top 1.5s forwards;
+	animation: slide-in-from-top 1.5s forwards;
+}
+
+@media screen and (max-width: 992px) {
+  .animate-slide-right-nav {
+    animation: slide-in-from-right 0.5s forwards;
+    transition: transform 0.3s ease-out;
+  }
 }
