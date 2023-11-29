@@ -2,7 +2,7 @@ import React from "react";
 import Skills from "./Skills/Skills";
 import Experience from "./Experiences/experience";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 const Experiences = () => {
@@ -26,11 +26,11 @@ const Experiences = () => {
 						<div className="md:mx-4 flex animate-slide-top">
 							<a
 								href="/assets/files/Resume-Andrei-Marin.pdf"
-								download
-								className="text-zinc-300 font-bold mb-2 hidden sm:block"
+								target="_blank"
+								className="text-zinc-300 font-bold mb-2 "
 							>
-								Resume {"	"}
-								<FontAwesomeIcon icon={faDownload} />
+								View Resume {"	"}
+								<FontAwesomeIcon icon={faSearch} />
 							</a>
 						</div>
 					</div>
