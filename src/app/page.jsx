@@ -15,7 +15,7 @@ export default function Home() {
 		image: andrei,
 	};
 	return (
-		<div className="bg-black" style={{ height: "100VH" }}>
+		<div className="bg-black h-[100vh]">
 			<div className="max-w-screen">
 				<div className=" relative isolate px-6 pt-14 lg:px-8 " style={{ height: "100VH" }}>
 					<div
