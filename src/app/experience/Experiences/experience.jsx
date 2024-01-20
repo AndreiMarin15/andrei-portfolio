@@ -15,6 +15,11 @@ const experiences = [
 		date: "October 2021 - January 2024",
 	},
 	{
+		exp: "DLSU User Experience Society",
+		position: "Development Lead",
+		date: "October 2023 - January 2024",
+	},
+	{
 		exp: "DLSU USG - OSEC",
 		position: "Executive for Web Development",
 		date: "November 2021 - August 2024",
@@ -29,17 +34,11 @@ const experiences = [
 		position: "Code League 2022 - Participant",
 		date: "April 2022",
 	},
-	{
-		exp: "DLSU User Experience Society",
-		position: "Development Lead",
-		date: "October 2023 - Present",
-	},
 ];
 
 export default function Experience() {
 	return (
 		<div className="w-2xl">
-			
 			<ul type="list" className="divide-y divide-teal-100  animate-fade-in">
 				{experiences.map((experience) => (
 					<li key={experience.position} className="flex justify-between gap-x-6 py-5">

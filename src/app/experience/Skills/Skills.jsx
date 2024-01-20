@@ -4,12 +4,12 @@ const skillData = [
 	{
 		id: 1,
 		title: "Html, Css, Scss",
-		percentage: "80%",
+		percentage: "90%",
 	},
 	{
 		id: 2,
 		title: "TailwindCSS",
-		percentage: "70%",
+		percentage: "80%",
 	},
 	{
 		id: 3,
@@ -19,7 +19,7 @@ const skillData = [
 	{
 		id: 4,
 		title: "ReactJS",
-		percentage: "85%",
+		percentage: "95%",
 	},
 	{
 		id: 5,
@@ -39,12 +39,12 @@ const skillData = [
 	{
 		id: 8,
 		title: "Flutter",
-		percentage: "60%",
+		percentage: "70%",
 	},
 	{
 		id: 9,
 		title: "NextJS",
-		percentage: "60%",
+		percentage: "90%",
 	},
 	{
 		id: 10,
@@ -54,7 +54,7 @@ const skillData = [
 	{
 		id: 11,
 		title: "Supabase",
-		percentage: "40%",
+		percentage: "60%",
 	},
 	{
 		id: 12,
@@ -64,7 +64,7 @@ const skillData = [
 	{
 		id: 13,
 		title: "VueJS",
-		percentage: "55%",
+		percentage: "60%",
 	},
 	{
 		id: 14,
