@@ -26,7 +26,7 @@ const Experiences = () => {
 						<div className="mb-4 flex justify-center text-center">
 							<div className="md:mx-4 flex animate-slide-top">
 								<a
-									href="/assets/files/Resume-Andrei-Marin.pdf"
+									href="/assets/files/Andrei_Marin_Resume.pdf"
 									target="_blank"
 									className="text-zinc-300 font-bold mb-2 "
 								>
