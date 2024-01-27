@@ -69,7 +69,7 @@ const skillData = [
 	{
 		id: 14,
 		title: "PHP",
-		percentage: "40%",
+		percentage: "70%",
 	},
 ];
 
