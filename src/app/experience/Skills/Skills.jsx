@@ -38,7 +38,7 @@ const skillData = [
 	},
 	{
 		id: 8,
-		title: "Flutter",
+		title: "Flutter & Dart",
 		percentage: "70%",
 	},
 	{
@@ -54,12 +54,12 @@ const skillData = [
 	{
 		id: 11,
 		title: "Supabase",
-		percentage: "60%",
+		percentage: "75%",
 	},
 	{
 		id: 12,
 		title: "Python",
-		percentage: "40%",
+		percentage: "60%",
 	},
 	{
 		id: 13,

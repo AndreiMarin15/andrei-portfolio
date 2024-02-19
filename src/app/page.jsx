@@ -10,8 +10,10 @@ export default function Home() {
 	const content = {
 		name: "Hi! I'm Andrei",
 		intro:
-			"I'm currently an undergraduate taking up Bachelor of Science in Information Systems at De La Salle University. I'm all about tech and love building cool stuff, especially when it comes to mobile and web development. When I'm not coding, you can find me going out with friends, doing org and academic responsibilities, or chilling at home while watching my favorite shows. It's all about balance, right?",
-		info: "Well, that's pretty much it from me! Since you're here, why not explore my work on GitHub, connect with me on social media, or take a look at my resume? I appreciate your interest and look forward to connecting with you. Thank you!",
+			"I am currently pursuing a Bachelor of Science degree in Information Systems at De La Salle University. My passion lies in technology, with a particular interest in mobile and web development. I take pride in creating innovative and efficient solutions that align with user needs and business goals.",
+		info: "In addition to my academic pursuits, I am actively involved in various organizational and academic responsibilities. I believe in maintaining a balanced lifestyle, which includes spending quality time with friends and spending my time doing things I love.",
+		info2:
+			"I invite you to explore my GitHub portfolio to gain insight into my work, connect with me on social media to stay updated on my latest endeavors, or peruse my resume for a more comprehensive overview of my skills and experiences. I appreciate your time and consideration and look forward to connect.",
 		image: andrei,
 	};
 	return (
@@ -58,6 +60,9 @@ export default function Home() {
 							</p>
 							<p className="animate-fade-in text-justify sm:leading-loose sm:text-center mt-2 text-xs sm:text-base leading-8 text-zinc-300 ">
 								{content.info}
+							</p>
+							<p className="animate-fade-in text-justify sm:leading-loose sm:text-center mt-2 text-xs sm:text-base leading-8 text-zinc-300 ">
+								{content.info2}
 							</p>
 						</div>
 						<div className="content items-center mb-8 flex justify-center">
