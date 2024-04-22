@@ -5,6 +5,11 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const experiences = [
 	{
+		exp: "Control Flow Labs",
+		position: "Full Stack Developer",
+		date: "April 2024 - Present"
+	},
+	{
 		exp: "Baytech BPO",
 		position: "Web Development Intern",
 		date: "September 2023 - December 2023",

@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 import andrei from "./assets/images/robot.jpg";
-
+import Typist from "react-typist";
 import { SocialIcon } from "react-social-icons";
 
 export default function Home() {
@@ -11,10 +11,18 @@ export default function Home() {
 		name: "Hi! I'm Andrei",
 		intro:
 			"I am currently pursuing a Bachelor of Science degree in Information Systems at De La Salle University. My passion lies in technology, with a particular interest in mobile and web development. I take pride in creating innovative and efficient solutions that align with user needs and business goals.",
-		info: "In addition to my academic pursuits, I am actively involved in various organizational and academic responsibilities. I believe in maintaining a balanced lifestyle, which includes spending quality time with friends and spending my time doing things I love.",
-		info2:
-			"I invite you to explore my GitHub portfolio to gain insight into my work, connect with me on social media to stay updated on my latest endeavors, or peruse my resume for a more comprehensive overview of my skills and experiences. I appreciate your time and consideration and look forward to connect.",
+		info: "In addition to my academic pursuits, I am currently working as a fulltime Full-Stack Developer at a Venture Studio here in Manila. I am always eager to learn new technologies and frameworks to enhance my skills and stay up-to-date with industry trends.",
+		info2: "Feel free to explore my work or connect with me through my socials or email!",
+
+		personalEmail: "andreimarin1622@gmail.com",
+		personalNumber: "+63 999 995 1973",
 		image: andrei,
+	};
+
+	const expandedContent = {
+		intro:
+			"I am a 21 year old undergraduate taking up Bachelor of Science in Information Systems at De La Salle University. I am a passionate and driven individual who is always eager to learn and grow. Aside from my studies, I'm also currently working as a Full-Stack Developer.",
+		info: "In case you wanna know more, feel free to click me!",
 	};
 	return (
 		<div className="bg-black h-[100vh]">
@@ -44,7 +52,7 @@ export default function Home() {
 									priority
 								></Image>
 							</div>
-							<div className="mx-3 animate-slide-right">
+							<div className="mx-3 animate-fade-in">
 								<h1 className=" text-2xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
 									{content.name}
 									<br></br>{" "}
