@@ -129,7 +129,7 @@ export function ExperienceTabs() {
 		<Tabs defaultValue="skills" className="w-full sm:w-3/4">
 			<TabsList className="grid w-full grid-cols-3 ">
 				<TabsTrigger value="skills">Skills</TabsTrigger>
-				<TabsTrigger value="experiences">Experiences</TabsTrigger>
+				<TabsTrigger value="experiences">Roles</TabsTrigger>
 				<TabsTrigger value="projects">Projects</TabsTrigger>
 			</TabsList>
 			<TabsContent value="skills">
