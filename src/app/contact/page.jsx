@@ -1,13 +1,6 @@
-import React from "react";
-import Skills from "./Skills/Skills";
-import Experience from "./Experiences/experience";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { ContactForm } from "@/components/templates/ContactForm";
 
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { Tabs } from "@/components/ui/tabs";
-import { ExperienceTabs } from "@/components/templates/ExperienceTabs";
-const Experiences = () => {
+export default function ContactPage() {
 	return (
 		<div className="bg-black h-[100vh]">
 			<div className="max-w-screen">
@@ -24,25 +17,8 @@ const Experiences = () => {
 							}}
 						/>
 					</div>
-					<div className="mx-auto  py-8 sm:py-10 lg:py-14">
-						<div className="mb-4 flex justify-center text-center">
-							<div className="md:mx-4 flex animate-slide-top">
-								<a
-									href="/assets/files/Andrei_Marin_Resume.pdf"
-									target="_blank"
-									className="text-zinc-300 font-bold mb-2 "
-								>
-									View Resume {"	"}
-									<FontAwesomeIcon icon={faSearch} />
-								</a>
-							</div>
-						</div>
-
-						<div className="flex flex-col md:flex-row justify-center">
-							<ExperienceTabs />
-							{/* <Experience />
-							<Skills /> */}
-						</div>
+					<div className="flex justify-center items-center min-h-[65vh]">
+						<ContactForm />
 					</div>
 					{/* <div
 						className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
@@ -60,6 +36,4 @@ const Experiences = () => {
 			</div>
 		</div>
 	);
-};
-
-export default Experiences;
+}

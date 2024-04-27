@@ -7,7 +7,7 @@ const experiences = [
 	{
 		exp: "Control Flow Labs",
 		position: "Full Stack Developer",
-		date: "April 2024 - Present"
+		date: "April 2024 - Present",
 	},
 	{
 		exp: "Baytech BPO",
@@ -43,8 +43,8 @@ const experiences = [
 
 export default function Experience() {
 	return (
-		<div className="w-2xl">
-			<ul type="list" className="divide-y divide-teal-100  animate-fade-in">
+		<div className="w-full px-5">
+			<ul type="list" className="h-[70vh] divide-y divide-teal-100  animate-fade-in">
 				{experiences.map((experience) => (
 					<li key={experience.position} className="flex justify-between gap-x-6 py-5">
 						<div className="flex min-w-0 gap-x-4">

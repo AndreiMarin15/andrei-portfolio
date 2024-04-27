@@ -7,11 +7,13 @@ import Link from "next/link";
 const navigation = [
 	{ name: "About me", href: "/" },
 	{ name: "Experience", href: "experience" },
+	{ name: "Contact", href: "contact" },
 	//{ name: "Github", href: "https://github.com/AndreiMarin15" },
 ];
 
 export default function Navbar() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+	const [currentTab, setCurrentTab] = useState("About me");
 
 	return (
 		<header className="absolute inset-x-0 top-0 z-50 bg-transparent">

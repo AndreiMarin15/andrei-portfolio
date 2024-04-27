@@ -75,7 +75,7 @@ const skillData = [
 
 export default function Skills() {
 	return (
-		<div className="w-full sm:w-2/5 py-4">
+		<div className="w-full p-4">
 			<div className="flex flex-wrap">
 				
 				{skillData.map((skill, id) => (
