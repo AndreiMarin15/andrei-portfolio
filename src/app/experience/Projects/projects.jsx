@@ -9,7 +9,7 @@ export function Projects({ title, description, role, src, technologies, github, 
 	return (
 		<Card>
 			<CardHeader>
-				<CardTitle className="text-teal-300">{title}</CardTitle>
+				<CardTitle className="text-teal-300 animate-fade-in">{title}</CardTitle>
 			</CardHeader>
 			{index % 2 !== 0 ? (
 				<div className=" sm:flex">
