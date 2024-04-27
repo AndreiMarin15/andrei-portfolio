@@ -4,7 +4,7 @@ import { Projects } from "@/app/experience/Projects/projects";
 import Skills from "@/app/experience/Skills/Skills";
 
 import { Card } from "@/components/ui/card";
-import { CSSTransition } from "react-transition-group";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -148,14 +148,12 @@ export function ExperienceTabs() {
 			</TabsContent>
 			<TabsContent value="projects">
 				<ScrollArea className="h-[70vh] sm:h-[65vh] w-full rounded-md border">
-					<Card>
-						{projectsWithImages.map((project, index) => (
-							<Projects key={index} {...project} index={index} />
-						))}
-						{projectsWithoutImages.map((project, index) => (
-							<Projects key={index} {...project} index={index} />
-						))}
-					</Card>
+					{projectsWithImages.map((project, index) => (
+						<Projects key={index} {...project} index={index} />
+					))}
+					{projectsWithoutImages.map((project, index) => (
+						<Projects key={index} {...project} index={index} />
+					))}
 				</ScrollArea>
 			</TabsContent>
 		</Tabs>

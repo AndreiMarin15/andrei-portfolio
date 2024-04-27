@@ -144,6 +144,24 @@
 	animation: slide-in-from-top 1.5s forwards;
 }
 
+.fade-in-enter {
+	opacity: 0;
+}
+
+.fade-in-enter-active {
+	opacity: 1;
+	transition: opacity 500ms;
+}
+
+.fade-in-exit {
+	opacity: 1;
+}
+
+.fade-in-exit-active {
+	opacity: 0;
+	transition: opacity 500ms;
+}
+
 @media screen and (max-width: 992px) {
 	.animate-slide-right-nav {
 		animation: slide-in-from-right 0.5s forwards;
