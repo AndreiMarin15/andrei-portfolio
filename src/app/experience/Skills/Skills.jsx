@@ -44,7 +44,7 @@ const skillData = [
 	{
 		id: 9,
 		title: "NextJS",
-		percentage: "90%",
+		percentage: "95%",
 	},
 	{
 		id: 10,
@@ -54,7 +54,7 @@ const skillData = [
 	{
 		id: 11,
 		title: "Supabase",
-		percentage: "75%",
+		percentage: "90%",
 	},
 	{
 		id: 12,
@@ -77,7 +77,6 @@ export default function Skills() {
 	return (
 		<div className="w-full p-4">
 			<div className="flex flex-wrap">
-				
 				{skillData.map((skill, id) => (
 					<SkillItem skill={skill} key={id} />
 				))}
