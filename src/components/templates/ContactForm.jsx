@@ -24,7 +24,7 @@ export function ContactForm() {
 		setMessage("");
 	};
 	return (
-		<Card className="w-full max-w-2xl h-full min-h-[42rem] mt-5">
+		<Card className="w-full max-w-2xl h-full min-h-[42rem] my-5 sm:mt-5">
 			<CardHeader>
 				<CardTitle className="text-2xl">Contact Me</CardTitle>
 				<CardDescription>Enter your email below to to send a message.</CardDescription>

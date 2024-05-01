@@ -25,9 +25,9 @@ export default function Home() {
 		info: "In case you wanna know more, feel free to click me!",
 	};
 	return (
-		<div className="h-[100vh]">
+		<div className="h-[90vh]">
 			<div className="max-w-screen">
-				<div className=" relative isolate px-6 pt-14 lg:px-8 " style={{ height: "100VH" }}>
+				<div className=" relative isolate px-6 pt-14 lg:px-8 ">
 					<div
 						className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
 						aria-hidden="true"
