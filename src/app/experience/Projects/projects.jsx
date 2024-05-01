@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { InView } from "react-intersection-observer";
 import { CSSTransition } from "react-transition-group";
+import { Badge } from "@/components/ui/badge";
 export function Projects({ title, description, role, src, technologies, github, deployment, year, index }) {
 	return (
 		<InView as="div" triggerOnce>
@@ -28,7 +29,13 @@ export function Projects({ title, description, role, src, technologies, github, 
 										</CardContent>
 										<CardContent>
 											{Array.isArray(technologies) && technologies.length > 0 && (
-												<CardDescription>Technologies: {technologies.join(", ")}</CardDescription>
+												<CardDescription>
+													{technologies.map((tech, index) => (
+														<Badge key={index} className="m-1">
+															{tech}
+														</Badge>
+													))}
+												</CardDescription>
 											)}
 										</CardContent>
 										<CardContent>
@@ -57,7 +64,13 @@ export function Projects({ title, description, role, src, technologies, github, 
 										</CardContent>
 										<CardContent>
 											{Array.isArray(technologies) && technologies.length > 0 && (
-												<CardDescription>Technologies: {technologies.join(", ")}</CardDescription>
+												<CardDescription>
+													{technologies.map((tech, index) => (
+														<Badge key={index} className="m-1">
+															{tech}
+														</Badge>
+													))}
+												</CardDescription>
 											)}
 										</CardContent>
 										<CardContent>
