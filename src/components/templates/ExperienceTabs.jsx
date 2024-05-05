@@ -14,6 +14,7 @@ import endotracker from "../../app/assets/images/endotracker.png";
 import inventorymanagement from "../../app/assets/images/inventory-management.png";
 import studybud from "../../app/assets/images/studybud.png";
 import uxsoc from "../../app/assets/images/uxsoc.png";
+import diabetes from "../../app/assets/images/diabetes.png";
 
 export function ExperienceTabs() {
 	const projectsWithImages = [
@@ -27,6 +28,18 @@ export function ExperienceTabs() {
 			technologies: ["NextJS", "Supabase", "FHIR", "Vercel"],
 			github: "https://github.com/AndreiMarin15/capstone",
 			deployment: "https://capstone-cap2224.vercel.app/",
+			year: "2024",
+		},
+
+		{
+			title: "Heart Disease Risk Prediction",
+			description:
+				"A side project that aims to predict the risk of heart disease based on the data provided by the user. It's a full-stack project that uses NextJS and Gemini API. The prompt used for Gemini API is the Framingham Heart Study. It's a project that aims to help users be more aware of their health and the risks they might have.",
+
+			src: diabetes,
+			technologies: ["NextJS", "Gemini", "TypeScript"],
+			github: "https://github.com/AndreiMarin15/heart-disease-risk-prediction",
+			deployment: null,
 			year: "2024",
 		},
 
