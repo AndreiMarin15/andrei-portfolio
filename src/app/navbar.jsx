@@ -20,16 +20,13 @@ export default function Navbar({ children }) {
 	return (
 		<>
 			<header className="absolute inset-x-0 top-0 z-50 bg-transparent">
-				<nav
-					className="flex items-center justify-center gap-x-6 cursor-pointer lg:gap-x-12 p-6 lg:px-8"
-					aria-label="Global"
-				>
+				<nav className="flex items-center justify-center gap-x-6  lg:gap-x-12 p-6 lg:px-8" aria-label="Global">
 					{navigation.map((item) => (
-						<div
+						<Link
 							key={item.name}
+							href={item.href}
 							onClick={() => {
 								setSelected(item.href);
-								router.push(item.href);
 							}}
 							className={cn(
 								"text-sm font-semibold leading-6 hover:animate-pulse",
@@ -37,7 +34,7 @@ export default function Navbar({ children }) {
 							)}
 						>
 							{item.name}
-						</div>
+						</Link>
 					))}
 				</nav>
 			</header>
