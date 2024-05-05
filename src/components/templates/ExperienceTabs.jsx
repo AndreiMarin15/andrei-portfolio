@@ -104,9 +104,6 @@ export function ExperienceTabs() {
 			deployment: null,
 			year: "2022",
 		},
-	];
-
-	const projectsWithoutImages = [
 		{
 			title: "Endotracker Middleware",
 			description:
@@ -139,6 +136,7 @@ export function ExperienceTabs() {
 			year: "2023",
 		},
 	];
+
 	return (
 		<Tabs defaultValue="skills" className="w-full sm:w-3/4">
 			<TabsList className="grid w-full grid-cols-3 ">
@@ -188,31 +186,7 @@ export function ExperienceTabs() {
 							)}
 						</>
 					))}
-					{projectsWithoutImages.map((project, index) => (
-						<>
-							{index % 2 === 0 ? (
-								<motion.div
-									initial={{ opacity: 0, x: -200 }}
-									whileInView={{ opacity: 1, x: 0 }}
-									transition={{ duration: 0.5 }}
-									exit={{ opacity: 0, x: -200 }}
-									viewport={{ once: true }}
-								>
-									<Projects key={index} {...project} index={index} />
-								</motion.div>
-							) : (
-								<motion.div
-									initial={{ opacity: 0, x: 200 }}
-									whileInView={{ opacity: 1, x: 0 }}
-									transition={{ duration: 0.5 }}
-									exit={{ opacity: 0, x: 200 }}
-									viewport={{ once: true }}
-								>
-									<Projects key={index} {...project} index={index} />
-								</motion.div>
-							)}
-						</>
-					))}
+
 					{/*  */}
 				</ScrollArea>
 			</TabsContent>
