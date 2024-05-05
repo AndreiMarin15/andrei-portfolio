@@ -1,3 +1,4 @@
+"use client";
 import Experience from "@/app/experience/Experiences/experience";
 
 import { Projects } from "@/app/experience/Projects/projects";
@@ -15,7 +16,7 @@ import inventorymanagement from "../../app/assets/images/inventory-management.pn
 import studybud from "../../app/assets/images/studybud.png";
 import uxsoc from "../../app/assets/images/uxsoc.png";
 import diabetes from "../../app/assets/images/diabetes.png";
-
+import { motion, AnimatePresence } from "framer-motion";
 export function ExperienceTabs() {
 	const projectsWithImages = [
 		{
@@ -35,7 +36,7 @@ export function ExperienceTabs() {
 			title: "Heart Disease Risk Prediction",
 			description:
 				"A side project that aims to predict the risk of heart disease based on the data provided by the user. It's a full-stack project that uses NextJS and Gemini API. The prompt used for Gemini API is the Framingham Heart Study. It's a project that aims to help users be more aware of their health and the risks they might have.",
-
+			role: "Fullstack Developer",
 			src: diabetes,
 			technologies: ["NextJS", "Gemini", "TypeScript"],
 			github: "https://github.com/AndreiMarin15/heart-disease-risk-prediction",
@@ -161,12 +162,58 @@ export function ExperienceTabs() {
 			</TabsContent>
 			<TabsContent value="projects">
 				<ScrollArea className="h-[70vh] sm:h-[65vh] w-full rounded-md border">
+					{/*  */}
 					{projectsWithImages.map((project, index) => (
-						<Projects key={index} {...project} index={index} />
+						<>
+							{index % 2 === 0 ? (
+								<motion.div
+									initial={{ opacity: 0, x: -200 }}
+									whileInView={{ opacity: 1, x: 0 }}
+									transition={{ duration: 0.5 }}
+									exit={{ opacity: 0, x: -200 }}
+									viewport={{ once: true }}
+								>
+									<Projects key={index} {...project} index={index} />
+								</motion.div>
+							) : (
+								<motion.div
+									initial={{ opacity: 0, x: 200 }}
+									whileInView={{ opacity: 1, x: 0 }}
+									transition={{ duration: 0.5 }}
+									exit={{ opacity: 0, x: 200 }}
+									viewport={{ once: true }}
+								>
+									<Projects key={index} {...project} index={index} />
+								</motion.div>
+							)}
+						</>
 					))}
 					{projectsWithoutImages.map((project, index) => (
-						<Projects key={index} {...project} index={index} />
+						<>
+							{index % 2 === 0 ? (
+								<motion.div
+									initial={{ opacity: 0, x: -200 }}
+									whileInView={{ opacity: 1, x: 0 }}
+									transition={{ duration: 0.5 }}
+									exit={{ opacity: 0, x: -200 }}
+									viewport={{ once: true }}
+								>
+									<Projects key={index} {...project} index={index} />
+								</motion.div>
+							) : (
+								<motion.div
+									initial={{ opacity: 0, x: 200 }}
+									whileInView={{ opacity: 1, x: 0 }}
+									transition={{ duration: 0.5 }}
+									exit={{ opacity: 0, x: 200 }}
+									viewport={{ once: true }}
+								>
+									<Projects key={index} {...project} index={index} />
+								</motion.div>
+							)}
+						</>
 					))}
+					{/*  */}
 				</ScrollArea>
 			</TabsContent>
 		</Tabs>

@@ -4,8 +4,9 @@ import Navbar from "./navbar.jsx";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/components/ui/toaster";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { AnimateProvider } from "./framer/wrapper";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
 				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
 					<ScrollArea />
 					<Navbar />
-					{children}
+					<AnimateProvider>{children}</AnimateProvider>
 					<ScrollArea />
 					<Toaster />
 				</ThemeProvider>
