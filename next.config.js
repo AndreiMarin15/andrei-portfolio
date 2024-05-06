@@ -6,20 +6,25 @@ const nextConfig = {
 			{
 				protocol: "https",
 				hostname: "tailwindui.com",
-				pathname: "**"
+				pathname: "**",
 			},
 			{
 				protocol: "https",
 				hostname: "images.unsplash.com",
-				pathname: "**"
+				pathname: "**",
 			},
 			{
 				protocol: "https",
 				hostname: "readme-typing-svg.herokuapp.com",
-				pathname: "**"
-			}
+				pathname: "**",
+			},
+			{
+				protocol: "https",
+				hostname: "skillicons.dev",
+				pathname: "**",
+			},
 		],
 	},
 };
-// 
+//
 module.exports = nextConfig;
