@@ -28,7 +28,7 @@ export function Projects({ title, description, role, src, technologies, github, 
 						</CardContent>
 						<CardContent>
 							<CardDescription>
-								<Reveal>Role: {role}</Reveal>
+								<Reveal color={"white"}>Role: {role}</Reveal>
 							</CardDescription>
 						</CardContent>
 						<CardContent>
@@ -44,7 +44,7 @@ export function Projects({ title, description, role, src, technologies, github, 
 						</CardContent>
 						<CardContent>
 							<CardDescription>
-								<Reveal>Year: {year}</Reveal>
+								<Reveal color={"white"}>Year: {year}</Reveal>
 							</CardDescription>
 						</CardContent>
 					</div>
@@ -76,7 +76,7 @@ export function Projects({ title, description, role, src, technologies, github, 
 					<div className="sm:w-3/5">
 						<CardContent>
 							<CardDescription className="text-justify">
-								<Reveal>{description}</Reveal>
+								<Reveal color={"white"}>{description}</Reveal>
 							</CardDescription>
 						</CardContent>
 						<CardContent>
