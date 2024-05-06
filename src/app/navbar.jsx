@@ -14,11 +14,12 @@ const navigation = [
 
 export default function Navbar({ children }) {
 	const path = usePathname();
-	const [selected, setSelected] = React.useState("/");
+	// const [selected, setSelected] = React.useState("/");
 
-	React.useEffect(() => {
-		setSelected(path);
-	}, [path]);
+	// React.useEffect(() => {
+	// 	setSelected(path);
+	// }, [path]);
+
 	return (
 		<>
 			<header className="absolute inset-x-0 top-0 z-50 bg-transparent">
@@ -37,7 +38,8 @@ export default function Navbar({ children }) {
 					))}
 				</nav>
 			</header>
-			<AnimateProvider isVisible={path === selected ? true : false}>{children}</AnimateProvider>
+			{children}
+			{/* <AnimateProvider></AnimateProvider> */}
 		</>
 	);
 }

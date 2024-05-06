@@ -1,5 +1,6 @@
+// "use client"
 import { ContactForm } from "@/components/templates/ContactForm";
-
+// import { motion } from "framer-motion";
 export default function ContactPage() {
 	return (
 		<div className="bg-black h-[100vh]">
@@ -17,7 +18,11 @@ export default function ContactPage() {
 							}}
 						/>
 					</div>
-					<div className="flex justify-center items-center min-h-[65vh]">
+					<div
+						// initial={{ scale: 0, y: -150 }}
+						// animate={{ scale: 1, y: 0, transition: { duration: 0.25 } }}
+						className="flex justify-center items-center min-h-[65vh]"
+					>
 						<ContactForm />
 					</div>
 					<div

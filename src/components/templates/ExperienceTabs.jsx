@@ -138,58 +138,64 @@ export function ExperienceTabs() {
 	];
 
 	return (
-		<Tabs defaultValue="skills" className="w-full sm:w-3/4">
-			<TabsList className="grid w-full grid-cols-3 ">
-				<TabsTrigger value="skills">Skills</TabsTrigger>
-				<TabsTrigger value="experiences">Roles</TabsTrigger>
-				<TabsTrigger value="projects">Projects</TabsTrigger>
-			</TabsList>
-			<TabsContent value="skills">
-				<Card>
+		<motion.div
+			initial={{ scale: 0, y: -150 }}
+			animate={{ scale: 1, y: 0, transition: { duration: 0.5 } }}
+			className="w-full sm:w-3/4"
+		>
+			<Tabs defaultValue="skills">
+				<TabsList className="grid w-full grid-cols-3 ">
+					<TabsTrigger value="skills">Skills</TabsTrigger>
+					<TabsTrigger value="experiences">Roles</TabsTrigger>
+					<TabsTrigger value="projects">Projects</TabsTrigger>
+				</TabsList>
+				<TabsContent value="skills">
+					<Card>
+						<ScrollArea className="h-[70vh] sm:h-[65vh] w-full rounded-md border">
+							<Skills />
+						</ScrollArea>
+					</Card>
+				</TabsContent>
+				<TabsContent value="experiences">
+					<Card>
+						<ScrollArea className="h-auto sm:h-[65vh] w-full rounded-md border">
+							<Experience />
+						</ScrollArea>
+					</Card>
+				</TabsContent>
+				<TabsContent value="projects">
 					<ScrollArea className="h-[70vh] sm:h-[65vh] w-full rounded-md border">
-						<Skills />
-					</ScrollArea>
-				</Card>
-			</TabsContent>
-			<TabsContent value="experiences">
-				<Card>
-					<ScrollArea className="h-auto sm:h-[65vh] w-full rounded-md border">
-						<Experience />
-					</ScrollArea>
-				</Card>
-			</TabsContent>
-			<TabsContent value="projects">
-				<ScrollArea className="h-[70vh] sm:h-[65vh] w-full rounded-md border">
-					{/*  */}
-					{projectsWithImages.map((project, index) => (
-						<>
-							{index % 2 === 0 ? (
-								// <motion.div
-								// 	initial={{ opacity: 0, x: -200 }}
-								// 	whileInView={{ opacity: 1, x: 0 }}
-								// 	transition={{ duration: 0.5 }}
-								// 	exit={{ opacity: 0, x: -200 }}
-								// 	viewport={{ once: true }}
-								// >
-								<Projects key={index} {...project} index={index} />
-							) : (
-								// </motion.div>
-								// <motion.div
-								// 	initial={{ opacity: 0, x: 200 }}
-								// 	whileInView={{ opacity: 1, x: 0 }}
-								// 	transition={{ duration: 0.5 }}
-								// 	exit={{ opacity: 0, x: 200 }}
-								// 	viewport={{ once: true }}
-								// >
-								<Projects key={index} {...project} index={index} />
-								// </motion.div>
-							)}
-						</>
-					))}
+						{/*  */}
+						{projectsWithImages.map((project, index) => (
+							<>
+								{index % 2 === 0 ? (
+									// <motion.div
+									// 	initial={{ opacity: 0, x: -200 }}
+									// 	whileInView={{ opacity: 1, x: 0 }}
+									// 	transition={{ duration: 0.5 }}
+									// 	exit={{ opacity: 0, x: -200 }}
+									// 	viewport={{ once: true }}
+									// >
+									<Projects key={index} {...project} index={index} />
+								) : (
+									// </motion.div>
+									// <motion.div
+									// 	initial={{ opacity: 0, x: 200 }}
+									// 	whileInView={{ opacity: 1, x: 0 }}
+									// 	transition={{ duration: 0.5 }}
+									// 	exit={{ opacity: 0, x: 200 }}
+									// 	viewport={{ once: true }}
+									// >
+									<Projects key={index} {...project} index={index} />
+									// </motion.div>
+								)}
+							</>
+						))}
 
-					{/*  */}
-				</ScrollArea>
-			</TabsContent>
-		</Tabs>
+						{/*  */}
+					</ScrollArea>
+				</TabsContent>
+			</Tabs>
+		</motion.div>
 	);
 }

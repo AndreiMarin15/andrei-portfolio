@@ -22,9 +22,7 @@ export default function RootLayout({ children }) {
 			<body className={inter.className + " bg-black h-[100vh]"}>
 				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
 					<ScrollArea />
-					<Navbar>
-						{children}
-					</Navbar>
+					<Navbar>{children}</Navbar>
 					<ScrollArea />
 					<Toaster />
 				</ThemeProvider>
