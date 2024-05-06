@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { AnimateProvider } from "./framer/wrapper";
@@ -13,10 +13,12 @@ const navigation = [
 ];
 
 export default function Navbar({ children }) {
-	const router = useRouter();
 	const path = usePathname();
 	const [selected, setSelected] = React.useState("/");
 
+	React.useEffect(() => {
+		setSelected(path);
+	}, [path]);
 	return (
 		<>
 			<header className="absolute inset-x-0 top-0 z-50 bg-transparent">
@@ -25,9 +27,6 @@ export default function Navbar({ children }) {
 						<Link
 							key={item.name}
 							href={item.href}
-							onClick={() => {
-								setSelected(item.href);
-							}}
 							className={cn(
 								"text-sm font-semibold leading-6 hover:animate-pulse",
 								path === item.href ? "text-teal-500" : "text-zinc-300"

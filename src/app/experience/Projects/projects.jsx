@@ -7,22 +7,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { Badge } from "@/components/ui/badge";
-import { motion } from "framer-motion";
+
 export function Projects({ title, description, role, src, technologies, github, deployment, year, index }) {
 	return (
-		// <motion.div
-		// 	initial={{ opacity: 0, x: -200 }}
-		// 	whileInView={{ opacity: 1, x: 0 }}
-		// 	transition={{ duration: 0.5 }}
-		// 	exit={{ opacity: 0, x: -200 }}
-		// 	viewport={{ once: true }}
-		// >
 		<Card>
 			<CardHeader>
 				<CardTitle className="text-teal-300">{title}</CardTitle>
 			</CardHeader>
 			{index % 2 !== 0 ? (
-				<div className=" sm:flex">
+				// on small screens, the image will be displayed first
+				<div className="sm:flex-row flex flex-col-reverse">
 					<div className="sm:w-3/5">
 						<CardContent>
 							<CardDescription className="text-justify">{description}</CardDescription>
@@ -52,7 +46,7 @@ export function Projects({ title, description, role, src, technologies, github, 
 					)}
 				</div>
 			) : (
-				<div className="sm:flex">
+				<div className="sm:flex ">
 					{src && (
 						<div>
 							<CardContent>{src && <Image src={src} alt={title} width={400} height={400} />}</CardContent>
@@ -97,6 +91,5 @@ export function Projects({ title, description, role, src, technologies, github, 
 				)}
 			</CardFooter>
 		</Card>
-		// </motion.div>
 	);
 }
