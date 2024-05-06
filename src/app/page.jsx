@@ -13,9 +13,9 @@ export default function Home() {
 		name: "Hi! I'm Andrei",
 		temp: "I am currently pursuing a Bachelor of Science degree in Information Systems at De La Salle University. My passion lies in technology, with a particular interest in mobile and web development.I currently work as a Full-Stack Developer at a Venture Studio here in Manila. Feel free to explore my work or connect with me through my socials or email!",
 		intro:
-			"I am currently pursuing a Bachelor of Science degree in Information Systems at De La Salle University. My passion lies in technology, with a particular interest in mobile and web development.I currently work as a Full-Stack Developer at a Venture Studio here in Manila. Feel free to explore my work or connect with me through my socials or email!",
-		// "I am currently pursuing a Bachelor of Science degree in Information Systems at De La Salle University. My passion lies in technology, with a particular interest in mobile and web development. I take pride in creating innovative and efficient solutions that align with user needs and business goals.",
-		info: "In addition to my academic pursuits, I am currently working as a fulltime Full-Stack Developer at a Venture Studio here in Manila. I am always eager to learn new technologies and frameworks to enhance my skills and stay up-to-date with industry trends.",
+			"I am currently pursuing a Bachelor of Science degree in Information Systems at De La Salle University. My passion lies in technology, with a particular interest in mobile and web development. ",
+
+		info: "I currently work as a Full-Stack Developer at a Venture Studio here in Manila. Feel free to explore my work or connect with me through my socials or email!",
 		info2: "Feel free to explore my work or connect with me through my socials or email!",
 
 		personalEmail: "andreimarin1622@gmail.com",
@@ -88,9 +88,11 @@ export default function Home() {
 										{content.intro}
 									</p>
 								</Reveal>
-								<p className="animate-fade-in text-justify sm:leading-loose sm:text-center mt-2 text-xs sm:text-base leading-8 text-zinc-300 ">
-									{/* {content.info} */}
-								</p>
+								<Reveal>
+									<p className="animate-fade-in text-justify sm:leading-loose sm:text-center mt-2 text-xs sm:text-base leading-8 text-zinc-300 ">
+										{content.info}
+									</p>
+								</Reveal>
 								<p className="animate-fade-in text-justify sm:leading-loose sm:text-center mt-2 text-xs sm:text-base leading-8 text-zinc-300 ">
 									{/* {content.info2} */}
 								</p>
