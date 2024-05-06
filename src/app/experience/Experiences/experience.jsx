@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-
+import { Reveal } from "../../framer/animate-on-view";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const experiences = [
@@ -49,12 +49,18 @@ export default function Experience() {
 					<li key={experience.position} className="flex justify-between gap-x-6 py-5">
 						<div className="flex min-w-0 gap-x-4">
 							<div className="min-w-0 flex-auto">
-								<p className="text-sm font-semibold leading-6 text-teal-300">{experience.exp}</p>
-								<p className="mt-1 truncate text-xs leading-5 text-zinc-100">{experience.position}</p>
+								<p className="text-sm font-semibold leading-6 text-teal-300">
+									<Reveal>{experience.exp}</Reveal>
+								</p>
+								<p className="mt-1 truncate text-xs leading-5 text-zinc-100">
+									<Reveal color={"white"}>{experience.position}</Reveal>
+								</p>
 							</div>
 						</div>
 						<div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
-							<p className="text-sm leading-6 text-zinc-100">{experience.date}</p>
+							<p className="text-sm leading-6 text-zinc-100">
+								<Reveal color={"white"}>{experience.date}</Reveal>
+							</p>
 						</div>
 					</li>
 				))}

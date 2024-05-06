@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { Reveal } from "@/app/framer/animate-on-view";
 
 const skillIcon = "https://skillicons.dev/icons?i=";
 const frontendSkills = [
@@ -190,7 +191,7 @@ export default function Skills() {
 		<div className="w-full p-4">
 			<div className="flex-col items-center justify-center text-center">
 				<div className="mt-5">
-					<motion.div
+					{/* <motion.div
 						initial="initial"
 						animate="animate"
 						variants={{
@@ -202,9 +203,11 @@ export default function Skills() {
 								},
 							},
 						}}
-					>
-						Frontend
-					</motion.div>
+					> */}
+					<div className="flex items-center justify-center">
+						<Reveal>Frontend</Reveal>
+					</div>
+					{/* </motion.div> */}
 					<div className="flex gap-3 mt-2 flex-wrap justify-center">
 						{frontendSkills.map((skill, id) => (
 							<motion.div
@@ -212,7 +215,7 @@ export default function Skills() {
 								animate="animate"
 								variants={{
 									initial: { scale: 0 },
-									animate: { scale: 1, transition: { duration: 0.75 } },
+									animate: { scale: 1, transition: { duration: 0.1 * id } },
 								}}
 								key={id}
 							>
@@ -228,7 +231,7 @@ export default function Skills() {
 					</div>
 				</div>
 				<div className="mt-5">
-					<motion.div
+					{/* <motion.div
 						initial="initial"
 						animate="animate"
 						variants={{
@@ -240,9 +243,11 @@ export default function Skills() {
 								},
 							},
 						}}
-					>
-						Backend
-					</motion.div>
+					> */}
+					<div className="flex items-center justify-center">
+						<Reveal>Backend</Reveal>
+					</div>
+					{/* </motion.div> */}
 					<div className="flex gap-3 mt-2 flex-wrap justify-center">
 						{backendSkills.map((skill, id) => (
 							<motion.div
@@ -250,7 +255,7 @@ export default function Skills() {
 								animate="animate"
 								variants={{
 									initial: { scale: 0 },
-									animate: { scale: 1, transition: { duration: 0.75 } },
+									animate: { scale: 1, transition: { duration: 0.3 * id } },
 								}}
 								key={id}
 							>
@@ -266,7 +271,7 @@ export default function Skills() {
 					</div>
 				</div>
 				<div className="mt-5">
-					<motion.div
+					{/* <motion.div
 						initial="initial"
 						animate="animate"
 						variants={{
@@ -278,9 +283,11 @@ export default function Skills() {
 								},
 							},
 						}}
-					>
-						Tools
-					</motion.div>
+					> */}
+					<div className="flex items-center justify-center">
+						<Reveal>Tools</Reveal>
+					</div>
+					{/* </motion.div> */}
 					<div className="flex gap-3 mt-2 flex-wrap justify-center">
 						{tools.map((skill, id) => (
 							<motion.div
@@ -288,7 +295,7 @@ export default function Skills() {
 								animate="animate"
 								variants={{
 									initial: { scale: 0 },
-									animate: { scale: 1, transition: { duration: 0.75 } },
+									animate: { scale: 1, transition: { duration: 0.5 * id } },
 								}}
 								key={id}
 							>

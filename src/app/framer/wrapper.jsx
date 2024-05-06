@@ -6,13 +6,13 @@ import { usePathname } from "next/navigation";
 export function AnimateProvider({ children, isVisible }) {
 	const path = usePathname();
 	return (
-		<AnimatePresence mode="wait">
+		<AnimatePresence>
 			{isVisible && (
 				<motion.div
 					key={path}
 					initial="initialState"
 					animate="animateState"
-					exit="exitState"
+					// exit="exitState"
 					transition={{ duration: 0.75 }}
 					variants={{
 						initialState: {

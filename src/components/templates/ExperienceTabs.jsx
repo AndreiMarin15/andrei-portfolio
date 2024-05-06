@@ -164,25 +164,25 @@ export function ExperienceTabs() {
 					{projectsWithImages.map((project, index) => (
 						<>
 							{index % 2 === 0 ? (
-								<motion.div
-									initial={{ opacity: 0, x: -200 }}
-									whileInView={{ opacity: 1, x: 0 }}
-									transition={{ duration: 0.5 }}
-									exit={{ opacity: 0, x: -200 }}
-									viewport={{ once: true }}
-								>
-									<Projects key={index} {...project} index={index} />
-								</motion.div>
+								// <motion.div
+								// 	initial={{ opacity: 0, x: -200 }}
+								// 	whileInView={{ opacity: 1, x: 0 }}
+								// 	transition={{ duration: 0.5 }}
+								// 	exit={{ opacity: 0, x: -200 }}
+								// 	viewport={{ once: true }}
+								// >
+								<Projects key={index} {...project} index={index} />
 							) : (
-								<motion.div
-									initial={{ opacity: 0, x: 200 }}
-									whileInView={{ opacity: 1, x: 0 }}
-									transition={{ duration: 0.5 }}
-									exit={{ opacity: 0, x: 200 }}
-									viewport={{ once: true }}
-								>
-									<Projects key={index} {...project} index={index} />
-								</motion.div>
+								// </motion.div>
+								// <motion.div
+								// 	initial={{ opacity: 0, x: 200 }}
+								// 	whileInView={{ opacity: 1, x: 0 }}
+								// 	transition={{ duration: 0.5 }}
+								// 	exit={{ opacity: 0, x: 200 }}
+								// 	viewport={{ once: true }}
+								// >
+								<Projects key={index} {...project} index={index} />
+								// </motion.div>
 							)}
 						</>
 					))}
