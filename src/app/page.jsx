@@ -50,14 +50,15 @@ export default function Home() {
 								{/* <Reveal> */}
 								<motion.div
 									initial={{
-										// scale: 0,
-										y: -150,
+										scale: 0,
+										x: -150,
 									}}
 									animate={{
-										// scale: 1,
-										y: 0,
+										scale: 1,
+										x: 0,
 										transition: {
 											duration: 0.25,
+											delay: 0.25,
 										},
 									}}
 									className="w-24 h-24 mx-3 sm:w-44 sm:h-44 rounded-full overflow-hidden "
@@ -77,26 +78,38 @@ export default function Home() {
 										<Reveal>{content.name}</Reveal>
 
 										<span className="text-base sm:text-3xl text-teal-600 animate-pulse hover:animate-none cursor-default">
-											<Reveal>Web and Mobile Developer</Reveal>
+											<Reveal color={"white"}>Web and Mobile Developer</Reveal>
 										</span>
 									</h1>
 								</div>
 							</div>
-							<div className="content text-left sm:text-center">
-								<Reveal>
-									<p className="animate-fade-in text-justify sm:leading-loose sm:text-center sm:justify-center mt-6 text-xs sm:text-base leading-8 text-zinc-300 ">
-										{content.intro}
-									</p>
-								</Reveal>
-								<Reveal>
-									<p className="animate-fade-in text-justify sm:leading-loose sm:text-center mt-2 text-xs sm:text-base leading-8 text-zinc-300 ">
-										{content.info}
-									</p>
-								</Reveal>
+							<motion.div
+								initial={{
+									y: -150,
+									opacity: 0,
+								}}
+								animate={{
+									y: 0,
+									opacity: 1,
+									transition: {
+										duration: 0.25,
+										delay: 0.25,
+									},
+								}}
+								className="content text-left sm:text-center"
+							>
+								<p className="animate-fade-in text-justify sm:leading-loose sm:text-center sm:justify-center mt-6 text-xs sm:text-base leading-8 text-zinc-300 ">
+									{content.intro}
+								</p>
+
+								<p className="animate-fade-in text-justify sm:leading-loose sm:text-center mt-2 text-xs sm:text-base leading-8 text-zinc-300 ">
+									{content.info}
+								</p>
+
 								<p className="animate-fade-in text-justify sm:leading-loose sm:text-center mt-2 text-xs sm:text-base leading-8 text-zinc-300 ">
 									{/* {content.info2} */}
 								</p>
-							</div>
+							</motion.div>
 							<div className="content items-center mb-8 flex justify-center">
 								<div className="mx-4 max-w-xl flex justify-center">
 									<motion.div
