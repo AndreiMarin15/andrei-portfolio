@@ -84,7 +84,7 @@ export default function Home() {
 							</div>
 							<div className="content text-left sm:text-center">
 								<Reveal>
-									<p className="animate-fade-in text-justify sm:leading-loose sm:text-justify sm:justify-center mt-6 text-xs sm:text-base leading-8 text-zinc-300 ">
+									<p className="animate-fade-in text-justify sm:leading-loose sm:text-center sm:justify-center mt-6 text-xs sm:text-base leading-8 text-zinc-300 ">
 										{content.intro}
 									</p>
 								</Reveal>
