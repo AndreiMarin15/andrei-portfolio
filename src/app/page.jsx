@@ -29,7 +29,7 @@ export default function Home() {
 		info: "In case you wanna know more, feel free to click me!",
 	};
 	return (
-		<div className="h-[90vh]">
+		<div className="h-[90dvh] sm:h-[90vh]">
 			<div className="max-w-screen">
 				<div className=" relative isolate px-6 pt-14 lg:px-8 ">
 					<div
@@ -44,7 +44,7 @@ export default function Home() {
 							}}
 						/>
 					</div>
-					<div className="flex items-center justify-center h-[90vh]">
+					<div className="flex items-center justify-center h-[90dvh] sm:h-[90vh]">
 						<div className="mx-auto max-w-2xl py-8 sm:py-10 lg:py-14">
 							<div className="content items-center mb-8 flex justify-center">
 								{/* <Reveal> */}

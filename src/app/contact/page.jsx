@@ -3,7 +3,7 @@ import { ContactForm } from "@/components/templates/ContactForm";
 // import { motion } from "framer-motion";
 export default function ContactPage() {
 	return (
-		<div className="bg-black h-[100vh]">
+		<div className="bg-black h-[100dvh] sm:h-[100vh]">
 			<div className="max-w-screen">
 				<div className="relative isolate px-6 pt-14 lg:px-8">
 					<div
@@ -21,7 +21,7 @@ export default function ContactPage() {
 					<div
 						// initial={{ scale: 0, y: -150 }}
 						// animate={{ scale: 1, y: 0, transition: { duration: 0.25 } }}
-						className="flex justify-center items-center min-h-[65vh]"
+						className="flex justify-center items-center min-h-[65dvh]"
 					>
 						<ContactForm />
 					</div>

@@ -9,7 +9,7 @@ import { Tabs } from "@/components/ui/tabs";
 import { ExperienceTabs } from "@/components/templates/ExperienceTabs";
 const Experiences = () => {
 	return (
-		<div className="bg-black h-[100vh]">
+		<div className="bg-black h-[100dvh] sm:h-[100vh]">
 			<div className="max-w-screen">
 				<div className="relative isolate px-6 pt-14 lg:px-8">
 					<div

@@ -151,7 +151,7 @@ export function ExperienceTabs() {
 				</TabsList>
 				<TabsContent value="skills">
 					<Card>
-						<ScrollArea className="h-[70vh] sm:h-[65vh] w-full rounded-md border">
+						<ScrollArea className="h-[70dvh] sm:h-[65vh] w-full rounded-md border">
 							<Skills />
 						</ScrollArea>
 					</Card>
@@ -164,7 +164,7 @@ export function ExperienceTabs() {
 					</Card>
 				</TabsContent>
 				<TabsContent value="projects">
-					<ScrollArea className="h-[70vh] sm:h-[65vh] w-full rounded-md border">
+					<ScrollArea className="h-[70dvh] sm:h-[65vh] w-full rounded-md border">
 						{/*  */}
 						{projectsWithImages.map((project, index) => (
 							<>

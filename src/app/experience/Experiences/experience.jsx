@@ -44,7 +44,7 @@ const experiences = [
 export default function Experience() {
 	return (
 		<div className="w-full px-5">
-			<ul type="list" className="h-[70vh] divide-y divide-teal-100  animate-fade-in">
+			<ul type="list" className="h-[70dvh] sm:h-[70vh] divide-y divide-teal-100  animate-fade-in">
 				{experiences.map((experience) => (
 					<li key={experience.position} className="flex justify-between gap-x-6 py-5">
 						<div className="flex min-w-0 gap-x-4">
