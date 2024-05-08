@@ -64,7 +64,7 @@ export function ContactForm() {
 							<Textarea
 								name="message"
 								placeholder="Type your message here."
-								className="min-h-[20rem]"
+								className="min-h-[20dvh] sm:min-h-[30dvh]"
 								value={message}
 								onChange={(e) => {
 									setMessage(e.target.value);
