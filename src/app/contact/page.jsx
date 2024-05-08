@@ -21,7 +21,7 @@ export default function ContactPage() {
 					<div
 						// initial={{ scale: 0, y: -150 }}
 						// animate={{ scale: 1, y: 0, transition: { duration: 0.25 } }}
-						className="flex justify-center items-center min-h-[65dvh]"
+						className="flex justify-center items-center min-h-[50dvh] sm:min-h-[65dvh]"
 					>
 						<ContactForm />
 					</div>

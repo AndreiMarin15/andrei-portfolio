@@ -28,7 +28,7 @@ export function ContactForm() {
 		<motion.div
 			initial={{ scale: 0.5 }}
 			animate={{ scale: 1, transition: { duration: 0.5 } }}
-			className="w-full max-w-2xl h-full min-h-[42rem] my-5 sm:mt-5"
+			className="w-full max-w-2xl h-full min-h-[50dvh] sm:min-h-[65dvh] my-5 sm:mt-5"
 		>
 			<Card>
 				<CardHeader>
