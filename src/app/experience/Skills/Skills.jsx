@@ -26,6 +26,10 @@ const frontendSkills = [
 		title: "Javascript",
 	},
 	{
+		id: 5,
+		title: "ts",
+	},
+	{
 		id: 6,
 		title: "React",
 	},
@@ -76,14 +80,35 @@ const backendSkills = [
 		id: 6,
 		title: "Dart",
 	},
-	// {
-	// 	id: 7,
-	// 	title: "FHIR",
-	// },
-	// {
-	// 	id: 8,
-	// 	title: "Gemini",
-	// },
+	{
+		id: 8,
+		title: "bun",
+	},
+
+	{
+		id: 9,
+		title: "npm",
+	},
+	{
+		id: 10,
+		title: "yarn",
+	},
+	{
+		id: 11,
+		title: "postgresql",
+	},
+	{
+		id: 12,
+		title: "mysql",
+	},
+	{
+		id: 12,
+		title: "sqlite",
+	},
+	{
+		id: 13,
+		title: "java",
+	},
 ];
 
 const tools = [
@@ -111,6 +136,29 @@ const tools = [
 	{
 		id: 7,
 		title: "Figma",
+	},
+
+	{
+		id: 8,
+		title: "Postman",
+	},
+
+	{
+		id: 10,
+		title: "VSCode",
+	},
+
+	{
+		id: 14,
+		title: "AndroidStudio",
+	},
+	{
+		id: 15,
+		title: "idea",
+	},
+	{
+		id: 18,
+		title: "PowerShell",
 	},
 ];
 const skillData = [
