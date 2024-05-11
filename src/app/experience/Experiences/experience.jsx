@@ -27,7 +27,7 @@ const experiences = [
 	{
 		exp: "DLSU USG - OSEC",
 		position: "Executive for Web Development",
-		date: "November 2021 - August 2024",
+		date: "November 2021 - August 2022",
 	},
 	{
 		exp: "La Salle Computer Society",
