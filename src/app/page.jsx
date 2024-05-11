@@ -15,7 +15,7 @@ export default function Home() {
 		intro:
 			"I am currently pursuing a Bachelor of Science degree in Information Systems at De La Salle University. My passion lies in technology, with a particular interest in mobile and web development. ",
 
-		info: "I currently work as a Full-Stack Developer at a Venture Studio here in Manila. Feel free to explore my work or connect with me through my socials or email!",
+		info: "I currently work as a Full-Stack Developer at a Venture Studio Corporation here in Manila. Feel free to explore my work or connect with me through my socials or email!",
 		info2: "Feel free to explore my work or connect with me through my socials or email!",
 
 		personalEmail: "andreimarin1622@gmail.com",
