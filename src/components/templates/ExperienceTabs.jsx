@@ -23,7 +23,7 @@ export function ExperienceTabs() {
 			title: "Endotracker",
 			description:
 				"EndoTracker is an EHR made in consideration of Endocrinologists working in either small clinics or big hospitals, as well as their patients in the Philippines. It's one part of a big capstone project focused on Interoperability. It features different functionalities such as data sharing, health monitoring, doctor referrals, and many more.",
-			role: "Fullstack Developer, Lead Developer",
+			role: "Fullstack Developer",
 
 			src: endotracker,
 			technologies: ["NextJS", "Supabase", "FHIR", "Vercel"],
@@ -108,7 +108,7 @@ export function ExperienceTabs() {
 			title: "Endotracker Middleware",
 			description:
 				"The middleware for the EndoTracker project. It's the bridge between the project and the other systems that wish to connect to the project. It's responsible for handling the data from one system to endotracker and vice versa. It also handles the data from the backend and sends it to the frontend. It's a Node.js server that uses Express.js as its framework.",
-			role: "Fullstack Developer, Lead Developer",
+			role: "Fullstack Developer",
 
 			technologies: ["ExpressJS", "NodeJS", "FHIR", "Render", "Supabase"],
 			github: "https://github.com/AndreiMarin15/cap-middleware",
