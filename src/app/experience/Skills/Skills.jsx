@@ -161,76 +161,151 @@ const tools = [
 		title: "PowerShell",
 	},
 ];
-const skillData = [
+
+const languages = [
 	{
-		id: 1,
-		title: "Html, Css, Scss",
-		percentage: "90%",
-	},
-	{
-		id: 2,
-		title: "TailwindCSS",
-		percentage: "80%",
-	},
-	{
-		id: 3,
 		title: "Javascript",
-		percentage: "95%",
 	},
 	{
-		id: 4,
-		title: "ReactJS",
-		percentage: "95%",
+		title: "Typescript",
 	},
 	{
-		id: 5,
-		title: "ExpressJS",
-		percentage: "90%",
+		title: "Dart",
 	},
 	{
-		id: 6,
-		title: "MongoDB",
-		percentage: "95%",
+		title: "Java",
 	},
 	{
-		id: 7,
 		title: "Kotlin",
-		percentage: "80%",
 	},
 	{
-		id: 8,
-		title: "Flutter & Dart",
-		percentage: "70%",
-	},
-	{
-		id: 9,
-		title: "NextJS",
-		percentage: "95%",
-	},
-	{
-		id: 10,
-		title: "Firebase",
-		percentage: "90%",
-	},
-	{
-		id: 11,
-		title: "Supabase",
-		percentage: "90%",
-	},
-	{
-		id: 12,
-		title: "Python",
-		percentage: "60%",
-	},
-	{
-		id: 13,
-		title: "VueJS",
-		percentage: "60%",
-	},
-	{
-		id: 14,
 		title: "PHP",
-		percentage: "70%",
+	},
+	{
+		title: "Python",
+	},
+	{
+		title: "C",
+	},
+	{
+		title: "Cpp",
+	},
+];
+
+const frameworksAndTools = [
+	{
+		title: "NextJS",
+	},
+	{
+		title: "React",
+	},
+	{
+		title: "VueJS",
+	},
+	{
+		title: "Flutter",
+	},
+	{
+		title: "NodeJS",
+	},
+	{
+		title: "ExpressJS",
+	},
+
+	{
+		title: "Bun",
+	},
+	{
+		title: "npm",
+	},
+	{
+		title: "yarn",
+	},
+];
+
+const designAndApi = [
+	{
+		title: "tailwind",
+	},
+	{
+		title: "bootstrap",
+	},
+	{
+		title: "Figma",
+	},
+	{
+		title: "materialui",
+	},
+	{
+		title: "styledcomponents",
+	},
+	{
+		title: "ps",
+	},
+	{
+		title: "Postman",
+	},
+];
+
+const databases = [
+	{
+		title: "MongoDB",
+	},
+	{
+		title: "Firebase",
+	},
+	{
+		title: "Supabase",
+	},
+	{
+		title: "Postgresql",
+	},
+	{
+		title: "MySQL",
+	},
+	{
+		title: "SQLite",
+	},
+	{
+		title: "Notion",
+	},
+	{
+		title: "Prisma",
+	},
+];
+
+const devTools = [
+	{
+		title: "Docker",
+	},
+	{
+		title: "Vercel",
+	},
+	{
+		title: "Git",
+	},
+	{
+		title: "Github",
+	},
+	{
+		title: "Gitlab",
+	},
+
+	{
+		title: "VSCode",
+	},
+	{
+		title: "AndroidStudio",
+	},
+	{
+		title: "Idea",
+	},
+	{
+		title: "Discord",
+	},
+
+	{
+		title: "Notion",
 	},
 ];
 
@@ -239,25 +314,12 @@ export default function Skills() {
 		<div className="w-full p-4">
 			<div className="flex-col items-center justify-center text-center">
 				<div className="mt-5">
-					{/* <motion.div
-						initial="initial"
-						animate="animate"
-						variants={{
-							initial: { y: -100 },
-							animate: {
-								y: 0,
-								transition: {
-									duration: 0.5,
-								},
-							},
-						}}
-					> */}
 					<div className="flex items-center justify-center">
-						<Reveal>Frontend</Reveal>
+						<Reveal>Languages</Reveal>
 					</div>
 					{/* </motion.div> */}
 					<div className="flex gap-3 mt-2 flex-wrap justify-center">
-						{frontendSkills.map((skill, id) => (
+						{languages.map((skill, id) => (
 							<motion.div
 								initial="initial"
 								animate="animate"
@@ -279,25 +341,12 @@ export default function Skills() {
 					</div>
 				</div>
 				<div className="mt-5">
-					{/* <motion.div
-						initial="initial"
-						animate="animate"
-						variants={{
-							initial: { x: 200 },
-							animate: {
-								x: 0,
-								transition: {
-									duration: 0.5,
-								},
-							},
-						}}
-					> */}
 					<div className="flex items-center justify-center">
-						<Reveal>Backend</Reveal>
+						<Reveal>Frameworks & Tools</Reveal>
 					</div>
 					{/* </motion.div> */}
 					<div className="flex gap-3 mt-2 flex-wrap justify-center">
-						{backendSkills.map((skill, id) => (
+						{frameworksAndTools.map((skill, id) => (
 							<motion.div
 								initial="initial"
 								animate="animate"
@@ -319,25 +368,67 @@ export default function Skills() {
 					</div>
 				</div>
 				<div className="mt-5">
-					{/* <motion.div
-						initial="initial"
-						animate="animate"
-						variants={{
-							initial: { x: -200 },
-							animate: {
-								x: 0,
-								transition: {
-									duration: 0.5,
-								},
-							},
-						}}
-					> */}
 					<div className="flex items-center justify-center">
-						<Reveal>Tools</Reveal>
+						<Reveal>Design & API Tools</Reveal>
 					</div>
 					{/* </motion.div> */}
 					<div className="flex gap-3 mt-2 flex-wrap justify-center">
-						{tools.map((skill, id) => (
+						{designAndApi.map((skill, id) => (
+							<motion.div
+								initial="initial"
+								animate="animate"
+								variants={{
+									initial: { scale: 0 },
+									animate: { scale: 1, transition: { duration: 0.3 * id } },
+								}}
+								key={id}
+							>
+								<Image
+									src={`${skillIcon}${skill.title.toLowerCase()}`}
+									alt={skill.title}
+									key={id}
+									width={50}
+									height={50}
+								/>
+							</motion.div>
+						))}
+					</div>
+				</div>
+				<div className="mt-5">
+					<div className="flex items-center justify-center">
+						<Reveal>Databases</Reveal>
+					</div>
+
+					<div className="flex gap-3 mt-2 flex-wrap justify-center">
+						{databases.map((skill, id) => (
+							<motion.div
+								initial="initial"
+								animate="animate"
+								variants={{
+									initial: { scale: 0 },
+									animate: { scale: 1, transition: { duration: 0.5 * id } },
+								}}
+								key={id}
+							>
+								<Image
+									src={`${skillIcon}${skill.title.toLowerCase()}`}
+									alt={skill.title}
+									key={id}
+									width={50}
+									height={50}
+								/>
+							</motion.div>
+						))}
+					</div>
+				</div>
+
+				<div className="mt-5">
+					<div className="flex items-center justify-center">
+						<Reveal>Development & Other Tools</Reveal>
+					</div>
+
+					<div className="flex gap-3 mt-2 flex-wrap justify-center">
+						{devTools.map((skill, id) => (
 							<motion.div
 								initial="initial"
 								animate="animate"
