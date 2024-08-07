@@ -2,7 +2,7 @@ import React from "react";
 import Skills from "./Skills/Skills";
 import Experience from "./Experiences/experience";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { Tabs } from "@/components/ui/tabs";
@@ -33,7 +33,7 @@ const Experiences = () => {
                   className="text-zinc-300 font-bold mb-2 "
                 >
                   View Resume {"	"}
-                  <FontAwesomeIcon icon={faSearch} />
+                  <FontAwesomeIcon icon={faFilePdf} />
                 </a>
               </div>
             </div>
