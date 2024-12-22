@@ -14,11 +14,11 @@ export default function Home() {
     name: "Hi! I'm Andrei",
     temp: "I am currently pursuing a Bachelor of Science degree in Information Systems at De La Salle University. My passion lies in technology, with a particular interest in mobile and web development.I currently work as a Full-Stack Developer at a Venture Studio here in Manila. Feel free to explore my work or connect with me through my socials or email!",
     intro:
-      "I am currently pursuing a Bachelor of Science degree in Information Systems at De La Salle University. My passion lies in technology, with a particular interest in mobile and web development. ",
+      "I hold a Bachelor of Science degree in Information Systems from De La Salle University. My passion lies in technology, with a focus on creating innovative solutions through mobile and web development. My journey is fueled by a commitment to delivering impactful user experiences. ",
 
-    info: "I currently work as a Full-Stack Developer at a Venture Studio Corporation here in Manila. Feel free to explore my work or connect with me through my socials or email!",
+    info: "I'm a Software Engineer with a knack for Frontend Development. I specialize in modern frameworks, responsive design, and crafting user-friendly interfaces. Building intuitive and scalable applications is what I enjoy most, and I'm always excited to collaborate, solve problems, and innovate.",
     info2:
-      "Feel free to explore my work or connect with me through my socials or email!",
+      "Right now, I'm working as a Full-Stack Engineer at a Venture Studio Corporation in Manila, helping bring exciting digital ideas to life. Feel free to check out my projects or reach out through my socials or email—I'd love to connect!",
 
     personalEmail: "andreimarin1622@gmail.com",
     personalNumber: "+63 999 995 1973",
