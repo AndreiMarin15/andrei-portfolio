@@ -12,13 +12,11 @@ import Head from "next/head";
 export default function Home() {
   const content = {
     name: "Hi! I'm Andrei",
-    temp: "I am currently pursuing a Bachelor of Science degree in Information Systems at De La Salle University. My passion lies in technology, with a particular interest in mobile and web development.I currently work as a Full-Stack Developer at a Venture Studio here in Manila. Feel free to explore my work or connect with me through my socials or email!",
-    intro:
-      "I hold a Bachelor of Science degree in Information Systems from De La Salle University. My passion lies in technology, with a focus on creating innovative solutions through mobile and web development. My journey is fueled by a commitment to delivering impactful user experiences. ",
 
-    info: "I'm a Software Engineer with a knack for Frontend Development. I specialize in modern frameworks, responsive design, and crafting user-friendly interfaces. Building intuitive and scalable applications is what I enjoy most, and I'm always excited to collaborate, solve problems, and innovate.",
-    info2:
-      "Right now, I'm working as a Full-Stack Engineer at a Venture Studio Corporation in Manila, helping bring exciting digital ideas to life. Feel free to check out my projects or reach out through my socials or email—I'd love to connect!",
+    intro:
+      "I hold a Bachelor of Science degree in Information Systems from De La Salle University. My passion lies in technology, with a strong focus on mobile and web development. I thrive on creating innovative solutions that drive impactful user experiences. ",
+
+    info: "I am currently a Full-Stack Engineer at a Venture Studio Corporation based in Manila. Feel free to explore my work or connect with me through my social media channels or email—I’d love to collaborate or discuss exciting opportunities!",
 
     personalEmail: "andreimarin1622@gmail.com",
     personalNumber: "+63 999 995 1973",
