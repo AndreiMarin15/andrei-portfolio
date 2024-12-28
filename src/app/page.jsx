@@ -23,11 +23,6 @@ export default function Home() {
     image: andrei,
   };
 
-  const expandedContent = {
-    intro:
-      "I am a 21 year old undergraduate taking up Bachelor of Science in Information Systems at De La Salle University. I am a passionate and driven individual who is always eager to learn and grow. Aside from my studies, I'm also currently working as a Full-Stack Developer.",
-    info: "In case you wanna know more, feel free to click me!",
-  };
   return (
     <>
       <Head>
