@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import andrei from "./assets/images/robot.jpg";
+import andrei from "./assets/images/pfp.jpg";
 
 import { SocialIcon } from "react-social-icons";
 import { Reveal } from "./framer/animate-on-view";
