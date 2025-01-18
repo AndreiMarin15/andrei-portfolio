@@ -7,7 +7,7 @@ const experiences = [
   {
     exp: "Control Flow Labs",
     position: "Full Stack Developer",
-    date: "April 2024 - Present",
+    date: "April 2024 - February 2025",
   },
   {
     exp: "DLSU HackerCup 2024",
