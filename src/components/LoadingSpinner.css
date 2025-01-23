@@ -1,0 +1,18 @@
+.loading-spinner {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 8px solid;
+  border-radius: 50%;
+  animation: dual-ring-spin 1.2s linear infinite;
+  /* Centering the spinner */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes dual-ring-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
