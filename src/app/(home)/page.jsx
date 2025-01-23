@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 
-import andrei from "./assets/images/pfp.jpg";
+import andrei from "@/app/assets/images/pfp.jpg";
 
 import { SocialIcon } from "react-social-icons";
-import { Reveal } from "./framer/animate-on-view";
+import { Reveal } from "@/app/framer/animate-on-view";
 import { motion } from "framer-motion";
 import Head from "next/head";
 
