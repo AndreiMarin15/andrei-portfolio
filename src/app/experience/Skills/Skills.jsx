@@ -19,19 +19,29 @@ export default function Skills() {
   useEffect(() => {
     const fetchData = async () => {
       const languageData = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/skills/languages`
+        `${
+          process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3000/api"
+        }/skills/languages`
       );
       const frameworkAndToolsData = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/skills/frameworks-and-tools`
+        `${
+          process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3000/api"
+        }/skills/frameworks-and-tools`
       );
       const designAndApiData = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/skills/design-and-api`
+        `${
+          process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3000/api"
+        }/skills/design-and-api`
       );
       const databasesData = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/skills/db`
+        `${
+          process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3000/api"
+        }/skills/db`
       );
       const devToolsData = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL}/skills/dev-tools`
+        `${
+          process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3000/api"
+        }/skills/dev-tools`
       );
 
       const languages = await languageData.json();
@@ -85,142 +95,148 @@ export default function Skills() {
   return (
     <div className="w-full p-4">
       <div className="flex-col items-center justify-center text-center">
-        <div className="mt-5">
-          <div className="flex items-center justify-center">
-            <Reveal>Languages</Reveal>
-          </div>
-          {/* </motion.div> */}
-          <div className="flex gap-3 mt-2 flex-wrap justify-center">
-            {languages.map((skill, id) => (
-              <motion.div
-                initial="initial"
-                animate="animate"
-                variants={{
-                  initial: { scale: 0 },
-                  animate: { scale: 1, transition: { duration: 0.5 } },
-                }}
-                key={id}
-              >
-                <Image
-                  src={`${skillIcon}${skill.title.toLowerCase()}`}
-                  alt={skill.title}
-                  key={id}
-                  width={50}
-                  height={50}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-        <div className="mt-5">
-          <div className="flex items-center justify-center">
-            <Reveal>Frameworks & Tools</Reveal>
-          </div>
-          {/* </motion.div> */}
-          <div className="flex gap-3 mt-2 flex-wrap justify-center">
-            {frameworksAndTools.map((skill, id) => (
-              <motion.div
-                initial="initial"
-                animate="animate"
-                variants={{
-                  initial: { scale: 0 },
-                  animate: { scale: 1, transition: { duration: 0.7} },
-                }}
-                key={id}
-              >
-                <Image
-                  src={`${skillIcon}${skill.title.toLowerCase()}`}
-                  alt={skill.title}
-                  key={id}
-                  width={50}
-                  height={50}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-        <div className="mt-5">
-          <div className="flex items-center justify-center">
-            <Reveal>Design & API Tools</Reveal>
-          </div>
-          {/* </motion.div> */}
-          <div className="flex gap-3 mt-2 flex-wrap justify-center">
-            {designAndApi.map((skill, id) => (
-              <motion.div
-                initial="initial"
-                animate="animate"
-                variants={{
-                  initial: { scale: 0 },
-                  animate: { scale: 1, transition: { duration: 0.7 } },
-                }}
-                key={id}
-              >
-                <Image
-                  src={`${skillIcon}${skill.title.toLowerCase()}`}
-                  alt={skill.title}
-                  key={id}
-                  width={50}
-                  height={50}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-        <div className="mt-5">
-          <div className="flex items-center justify-center">
-            <Reveal>Databases</Reveal>
-          </div>
+        {!imagesLoaded ? (
+          <LoadingSpinner />
+        ) : (
+          <>
+            <div className="mt-5">
+              <div className="flex items-center justify-center">
+                <Reveal>Languages</Reveal>
+              </div>
+              {/* </motion.div> */}
+              <div className="flex gap-3 mt-2 flex-wrap justify-center">
+                {languages.map((skill, id) => (
+                  <motion.div
+                    initial="initial"
+                    animate="animate"
+                    variants={{
+                      initial: { scale: 0 },
+                      animate: { scale: 1, transition: { duration: 0.5 } },
+                    }}
+                    key={id}
+                  >
+                    <Image
+                      src={`${skillIcon}${skill.title.toLowerCase()}`}
+                      alt={skill.title}
+                      key={id}
+                      width={50}
+                      height={50}
+                    />
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+            <div className="mt-5">
+              <div className="flex items-center justify-center">
+                <Reveal>Frameworks & Tools</Reveal>
+              </div>
+              {/* </motion.div> */}
+              <div className="flex gap-3 mt-2 flex-wrap justify-center">
+                {frameworksAndTools.map((skill, id) => (
+                  <motion.div
+                    initial="initial"
+                    animate="animate"
+                    variants={{
+                      initial: { scale: 0 },
+                      animate: { scale: 1, transition: { duration: 0.7 } },
+                    }}
+                    key={id}
+                  >
+                    <Image
+                      src={`${skillIcon}${skill.title.toLowerCase()}`}
+                      alt={skill.title}
+                      key={id}
+                      width={50}
+                      height={50}
+                    />
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+            <div className="mt-5">
+              <div className="flex items-center justify-center">
+                <Reveal>Design & API Tools</Reveal>
+              </div>
+              {/* </motion.div> */}
+              <div className="flex gap-3 mt-2 flex-wrap justify-center">
+                {designAndApi.map((skill, id) => (
+                  <motion.div
+                    initial="initial"
+                    animate="animate"
+                    variants={{
+                      initial: { scale: 0 },
+                      animate: { scale: 1, transition: { duration: 0.7 } },
+                    }}
+                    key={id}
+                  >
+                    <Image
+                      src={`${skillIcon}${skill.title.toLowerCase()}`}
+                      alt={skill.title}
+                      key={id}
+                      width={50}
+                      height={50}
+                    />
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+            <div className="mt-5">
+              <div className="flex items-center justify-center">
+                <Reveal>Databases</Reveal>
+              </div>
 
-          <div className="flex gap-3 mt-2 flex-wrap justify-center">
-            {databases.map((skill, id) => (
-              <motion.div
-                initial="initial"
-                animate="animate"
-                variants={{
-                  initial: { scale: 0 },
-                  animate: { scale: 1, transition: { duration: 1 } },
-                }}
-                key={id}
-              >
-                <Image
-                  src={`${skillIcon}${skill.title.toLowerCase()}`}
-                  alt={skill.title}
-                  key={id}
-                  width={50}
-                  height={50}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
+              <div className="flex gap-3 mt-2 flex-wrap justify-center">
+                {databases.map((skill, id) => (
+                  <motion.div
+                    initial="initial"
+                    animate="animate"
+                    variants={{
+                      initial: { scale: 0 },
+                      animate: { scale: 1, transition: { duration: 1 } },
+                    }}
+                    key={id}
+                  >
+                    <Image
+                      src={`${skillIcon}${skill.title.toLowerCase()}`}
+                      alt={skill.title}
+                      key={id}
+                      width={50}
+                      height={50}
+                    />
+                  </motion.div>
+                ))}
+              </div>
+            </div>
 
-        <div className="mt-5">
-          <div className="flex items-center justify-center">
-            <Reveal>Development & Other Tools</Reveal>
-          </div>
+            <div className="mt-5">
+              <div className="flex items-center justify-center">
+                <Reveal>Development & Other Tools</Reveal>
+              </div>
 
-          <div className="flex gap-3 mt-2 flex-wrap justify-center">
-            {devTools.map((skill, id) => (
-              <motion.div
-                initial="initial"
-                animate="animate"
-                variants={{
-                  initial: { scale: 0 },
-                  animate: { scale: 1, transition: { duration: 1 } },
-                }}
-                key={id}
-              >
-                <Image
-                  src={`${skillIcon}${skill.title.toLowerCase()}`}
-                  alt={skill.title}
-                  key={id}
-                  width={50}
-                  height={50}
-                />
-              </motion.div>
-            ))}
-          </div>
-        </div>
+              <div className="flex gap-3 mt-2 flex-wrap justify-center">
+                {devTools.map((skill, id) => (
+                  <motion.div
+                    initial="initial"
+                    animate="animate"
+                    variants={{
+                      initial: { scale: 0 },
+                      animate: { scale: 1, transition: { duration: 1 } },
+                    }}
+                    key={id}
+                  >
+                    <Image
+                      src={`${skillIcon}${skill.title.toLowerCase()}`}
+                      alt={skill.title}
+                      key={id}
+                      width={50}
+                      height={50}
+                    />
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
