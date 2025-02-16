@@ -93,7 +93,7 @@ export default function Skills() {
   }
 
   return (
-    <div className="w-full p-4">
+    <div className="w-full p-4 rounded-md">
       <div className="flex-col items-center justify-center text-center">
         {!imagesLoaded ? (
           <LoadingSpinner />

@@ -37,7 +37,7 @@ export function ContactForm() {
       animate={{ scale: 1, transition: { duration: 0.5 } }}
       className="w-full max-w-2xl h-full min-h-[50dvh] sm:min-h-[65dvh] my-5 sm:mt-5"
     >
-      <Card>
+      <Card className="bg-background/20">
         <CardHeader>
           <CardTitle className="text-2xl">
             <Reveal>Contact Me</Reveal>
@@ -68,6 +68,7 @@ export function ContactForm() {
                 type="text"
                 placeholder="Your full name"
                 required
+                className="bg-background/20"
               />
             </div>
             <div className="grid gap-2">
@@ -78,6 +79,7 @@ export function ContactForm() {
                 type="email"
                 placeholder="your.email@example.com"
                 required
+                className="bg-background/20"
               />
             </div>
             <div className="grid gap-2">
@@ -85,7 +87,7 @@ export function ContactForm() {
               <Textarea
                 name="message"
                 placeholder="Please enter your message here. I'll get back to you as soon as possible."
-                className="min-h-[20dvh] sm:min-h-[30dvh]"
+                className="min-h-[20dvh] sm:min-h-[30dvh] bg-background/20"
                 value={message}
                 onChange={(e) => {
                   setMessage(e.target.value);

@@ -1,9 +1,13 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
 import { Reveal } from "../../framer/animate-on-view";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const experiences = [
+  {
+    exp: "xFusion",
+    position: "Full Stack Developer",
+    date: "February 2025 - Present"
+  },
   {
     exp: "Control Flow Labs",
     position: "Full Stack Developer",
@@ -51,7 +55,7 @@ export default function Experience() {
     <div className="w-full px-5">
       <ul
         type="list"
-        className="h-[70dvh] sm:h-[70vh] divide-y divide-teal-100  animate-fade-in"
+        className="h-[70dvh] sm:h-[70vh] divide-y divide-teal-300/20  animate-fade-in"
       >
         {experiences.map((experience) => (
           <li
