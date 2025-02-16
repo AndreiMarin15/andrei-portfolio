@@ -25,9 +25,23 @@ export function ContactForm() {
     console.log("clicked");
     e.preventDefault();
 
-    emailjs.sendForm("service_816j5at", "template_475104i", form.current, {
-      publicKey: "75B3-vk4q9E9zBau3",
-    });
+    try {
+      emailjs.sendForm("service_816j5at", "template_475104i", form.current, {
+        publicKey: "75B3-vk4q9E9zBau3",
+      });
+
+      toast({
+        title: "Email Sent",
+        description: "I will get back to you as soon as possible.",
+        // action: <ToastAction altText="Goto schedule to undo">Undo</ToastAction>,
+      });
+    } catch (error) {
+      console.log(error);
+      toast({
+        title: "Email Not Sent",
+        description: "Please try again.",
+      });
+    }
 
     setMessage("");
   };
@@ -52,11 +66,6 @@ export function ContactForm() {
           ref={form}
           onSubmit={(e) => {
             sendEmail(e);
-            toast({
-              title: "Email Sent",
-              description: "I will get back to you as soon as possible.",
-              // action: <ToastAction altText="Goto schedule to undo">Undo</ToastAction>,
-            });
           }}
         >
           <CardContent className="grid gap-4">
