@@ -77,7 +77,7 @@ export function ContactForm() {
                 type="text"
                 placeholder="Your full name"
                 required
-                className="bg-background/20"
+                className="bg-background/20 text-base [font-size:16px] md:text-sm md:[font-size:14px]"
               />
             </div>
             <div className="grid gap-2">
