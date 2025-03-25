@@ -88,7 +88,7 @@ export function ContactForm() {
                 type="email"
                 placeholder="your.email@example.com"
                 required
-                className="bg-background/20"
+                className="bg-background/20 text-base [font-size:16px] md:text-sm md:[font-size:14px]"
               />
             </div>
             <div className="grid gap-2">
@@ -96,7 +96,7 @@ export function ContactForm() {
               <Textarea
                 name="message"
                 placeholder="Please enter your message here. I'll get back to you as soon as possible."
-                className="min-h-[20dvh] sm:min-h-[30dvh] bg-background/20"
+                className="min-h-[20dvh] sm:min-h-[30dvh] bg-background/20 text-base [font-size:16px] md:text-sm md:[font-size:14px]"
                 value={message}
                 onChange={(e) => {
                   setMessage(e.target.value);
