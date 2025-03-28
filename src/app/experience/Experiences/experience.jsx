@@ -4,7 +4,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const experiences = [
   {
-    exp: "xFusion",
+    exp: "Tolstoy",
     position: "Full Stack Developer",
     date: "February 2025 - Present"
   },
