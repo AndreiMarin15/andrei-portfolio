@@ -4,6 +4,11 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const experiences = [
   {
+    exp: "De La Salle University",
+    position: "BS Information Systems",
+    date: "2021 - 2025",
+  },
+  {
     exp: "Tolstoy",
     position: "Full Stack Developer",
     date: "February 2025 - Present"
