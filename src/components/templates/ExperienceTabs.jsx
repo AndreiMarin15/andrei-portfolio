@@ -16,9 +16,21 @@ import inventorymanagement from "../../app/assets/images/inventory-management.pn
 import studybud from "../../app/assets/images/studybud.png";
 import uxsoc from "../../app/assets/images/uxsoc.png";
 import diabetes from "../../app/assets/images/diabetes.png";
+import onyou from "../../app/assets/images/onyou.png";
 import { motion, AnimatePresence } from "framer-motion";
 export function ExperienceTabs() {
   const projectsWithImages = [
+    {
+      title: "OnYou (with Tolstoy)",
+      description:
+        "OnYou is a product by Tolstoy focused on AI-driven personal recommendations and digital wardrobe management. As a Fullstack Engineer at Tolstoy, I contributed to both frontend and backend development, API integration, and user experience enhancements.",
+      role: "Fullstack Engineer",
+      src: onyou,
+      technologies: ["ReactJS", "NodeJS", "Cube Cloud", "AWS"],
+      github: null,
+      deployment: "https://www.onyou.ai/",
+      year: "2025",
+    },
     {
       title: "Endotracker",
       description:
