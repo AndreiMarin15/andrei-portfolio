@@ -1,4 +1,3 @@
-
 import { Reveal } from "../../framer/animate-on-view";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
@@ -9,9 +8,14 @@ const experiences = [
     date: "2021 - 2025",
   },
   {
+    exp: "Starpay Corp",
+    position: "Software Engineer II",
+    date: "May 2025 - Present",
+  },
+  {
     exp: "Tolstoy",
     position: "Full Stack Developer",
-    date: "February 2025 - Present"
+    date: "February 2025 - May 2025",
   },
   {
     exp: "Control Flow Labs",
