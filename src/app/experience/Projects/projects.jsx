@@ -70,7 +70,7 @@ export function Projects({
               <CardContent>
                 {src && (
                   <Reveal>
-                    <Image src={src} alt={title} width={400} height={400} />{" "}
+                    <Image src={src} alt={title} width={400} height={400} className="rounded-xl" />{" "}
                   </Reveal>
                 )}
               </CardContent>
@@ -84,7 +84,7 @@ export function Projects({
               <CardContent>
                 {src && (
                   <Reveal>
-                    <Image src={src} alt={title} width={400} height={400} />{" "}
+                    <Image src={src} alt={title} width={400} height={400} className="rounded-lg" />{" "}
                   </Reveal>
                 )}
               </CardContent>

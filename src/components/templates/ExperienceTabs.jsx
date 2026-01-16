@@ -9,17 +9,41 @@ import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
-import demolay from "../../app/assets/images/demolay.png";
-import dlsuorghub from "../../app/assets/images/dlsu-org-hub.png";
-import endotracker from "../../app/assets/images/endotracker.png";
-import inventorymanagement from "../../app/assets/images/inventory-management.png";
-import studybud from "../../app/assets/images/studybud.png";
-import uxsoc from "../../app/assets/images/uxsoc.png";
-import diabetes from "../../app/assets/images/diabetes.png";
-import onyou from "../../app/assets/images/onyou.png";
+import demolay from "@/app/assets/images/demolay.png";
+import dlsuorghub from "@/app/assets/images/dlsu-org-hub.png";
+import endotracker from "@/app/assets/images/endotracker.png";
+import inventorymanagement from "@/app/assets/images/inventory-management.png";
+import studybud from "@/app/assets/images/studybud.png";
+import uxsoc from "@/app/assets/images/uxsoc.png";
+import diabetes from "@/app/assets/images/diabetes.png";
+import onyou from "@/app/assets/images/onyou.png";
+import starpay from "@/app/assets/images/starpay-website.png";
+import starpayapp from "@/app/assets/images/starpay-app.png";
 import { motion, AnimatePresence } from "framer-motion";
 export function ExperienceTabs() {
   const projectsWithImages = [
+    {
+      title: "Starpay App",
+      description:
+        "The mobile application for Starpay Corp, providing users with a comprehensive platform for financial transactions and account management.",
+      role: "Fullstack Engineer",
+      src: starpayapp,
+      technologies: ["Swift", "Kotlin (Jetpack)", "Java", "Instapay"],
+      github: null,
+      deployment: "https://www.starpay.com.ph/create-account/",
+      year: "2025",
+    },
+    {
+      title: "Starpay Website",
+      description:
+        "A website for Starpay Corp built using WordPress.",
+      role: "Fullstack Engineer",
+      src: starpay,
+      technologies: ["WordPress"],
+      github: null,
+      deployment: "https://www.starpay.com.ph/",
+      year: "2025",
+    },
     {
       title: "OnYou (with Tolstoy)",
       description:
