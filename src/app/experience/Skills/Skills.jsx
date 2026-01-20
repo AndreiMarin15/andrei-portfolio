@@ -92,6 +92,8 @@ export default function Skills() {
     return <LoadingSpinner />;
   }
 
+  console.log("languages",languages);
+
   return (
     <div className="w-full p-4 rounded-md">
       <div className="flex-col items-center justify-center text-center">

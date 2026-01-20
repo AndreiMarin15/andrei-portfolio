@@ -12,6 +12,9 @@ export async function GET() {
       title: "Dart",
     },
     {
+      title: "Swift",
+    },
+    {
       title: "Java",
     },
     {
