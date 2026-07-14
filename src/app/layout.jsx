@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { SpotlightCursor } from "@/components/SpotlightCursor";
 import { Footer } from "@/components/Footer";
+import { BackToTop } from "@/components/BackToTop";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
         >
           <SpotlightCursor />
+          <BackToTop />
           <div className="relative min-h-screen flex flex-col overflow-x-hidden">
             <Navbar />
             <main className="flex-1">{children}</main>

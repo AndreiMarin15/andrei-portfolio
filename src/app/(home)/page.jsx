@@ -8,6 +8,9 @@ import { SocialIcon } from "react-social-icons";
 import { GradientBackground } from "@/components/GradientBackground";
 import { TechMarquee } from "@/components/TechMarquee";
 import { BentoGrid } from "@/components/BentoGrid";
+import { StatsCounter } from "@/components/StatsCounter";
+import { CurrentlySection } from "@/components/CurrentlySection";
+import { ProcessSection } from "@/components/ProcessSection";
 import { FeaturedPreview } from "@/components/FeaturedPreview";
 import { personalInfo } from "@/lib/data";
 
@@ -248,6 +251,19 @@ export default function Home() {
           <BentoGrid />
         </div>
       </section>
+
+      {/* Stats */}
+      <section className="relative px-6 py-16 lg:px-8">
+        <div className="mx-auto max-w-5xl">
+          <StatsCounter />
+        </div>
+      </section>
+
+      {/* Currently */}
+      <CurrentlySection />
+
+      {/* How I Work */}
+      <ProcessSection />
 
       {/* Featured Projects Preview */}
       <FeaturedPreview />
