@@ -1,36 +1,37 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./navbar.jsx";
+import { Navbar } from "./navbar";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { AnimateProvider } from "./framer/wrapper";
+import { SpotlightCursor } from "@/components/SpotlightCursor";
+import { Footer } from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata = {
-  title: "Misael Andrei Marin",
-  description:
-    "Discover the work of Andrei Marin, a Fullstack Engineer excelling in Web and Mobile Development. His portfolio showcases his proficiency in technologies like MERN, Kotlin, FluF, SERN, and MEVN, Andrei's work reflects his strong foundation and eagerness to embrace new technologies. His portfolio not only showcases an extensive resume of professional, academic, and personal experiences and projects but also his enthusiasm for learning emerging stacks and technologies. Whether you're a potential employer, a prospective client, or a fellow professional, Andrei's portfolio offers a fresh perspective on web and mobile development from an emerging talent in the field, and is a testament to the continuous learning and growth in the ever-evolving field of web and mobile development.",
-  canonical: "https://andreimar.in",
-  metadataBase: new URL("https://andreimar.in"),
-  icons: {
-    // ... existing icons
+  title: {
+    default: "Andrei Marin — Fullstack Engineer",
+    template: "%s | Andrei Marin",
   },
-  other: {
-    "link-preconnect": {
-      rel: "preconnect",
-      href: "https://skillicons.dev",
-      crossOrigin: "anonymous",
-    },
+  description:
+    "Fullstack Engineer specializing in Web and Mobile Development. Building impactful digital experiences with modern technologies.",
+  metadataBase: new URL("https://andreimar.in"),
+  openGraph: {
+    title: "Andrei Marin — Fullstack Engineer",
+    description:
+      "Fullstack Engineer specializing in Web and Mobile Development.",
+    url: "https://andreimar.in",
+    siteName: "Andrei Marin",
+    locale: "en_US",
+    type: "website",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning className="overflow-x-hidden">
       <head>
         <link
           rel="preconnect"
@@ -39,16 +40,19 @@ export default function RootLayout({ children }) {
         />
         <link rel="dns-prefetch" href="https://skillicons.dev" />
       </head>
-      <body className={inter.className + " bg-black"}>
+      <body className={`${inter.variable} font-sans`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <ScrollArea />
-          <Navbar>{children}</Navbar>
-          <ScrollArea />
+          <SpotlightCursor />
+          <div className="relative min-h-screen flex flex-col overflow-x-hidden">
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
           <Toaster />
         </ThemeProvider>
         <Analytics />
