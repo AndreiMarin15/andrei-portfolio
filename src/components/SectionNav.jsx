@@ -46,9 +46,9 @@ export function SectionNav() {
   };
 
   return (
-    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 sm:sticky sm:bottom-auto sm:left-auto sm:translate-x-0 sm:top-20 flex justify-center mb-0 sm:mb-12 px-4">
+    <div className="sticky top-[60px] z-40 flex justify-center py-3 px-4 -mx-4 sm:top-[68px]">
       <nav
-        className="inline-flex items-center gap-1 rounded-2xl border border-border/60 bg-background/90 sm:bg-background/80 backdrop-blur-xl p-1.5 shadow-lg sm:shadow-sm"
+        className="inline-flex items-center gap-1 rounded-2xl border border-border/60 bg-background/90 backdrop-blur-xl p-1.5 shadow-lg"
         aria-label="Section navigation"
       >
         {sections.map((section) => {

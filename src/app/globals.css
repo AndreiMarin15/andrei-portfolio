@@ -59,7 +59,8 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased overflow-x-hidden;
+    @apply bg-background text-foreground antialiased;
+    overflow-x: clip;
   }
 
   ::selection {

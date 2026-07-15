@@ -19,7 +19,7 @@ export default function ExperiencePage() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="text-center mb-10"
+          className="text-center mb-8"
         >
           <h1 className="text-3xl font-bold text-foreground sm:text-4xl">
             My Work
@@ -29,11 +29,11 @@ export default function ExperiencePage() {
           </p>
         </motion.div>
 
-        {/* Sticky section nav */}
+        {/* Section nav — sits here in flow, becomes sticky on scroll */}
         <SectionNav />
 
         {/* Projects Section */}
-        <div id="projects" className="scroll-mt-40 mb-24">
+        <div id="projects" className="scroll-mt-[120px] mb-24">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ export default function ExperiencePage() {
         </div>
 
         {/* Experience Section */}
-        <div id="experience" className="scroll-mt-40 mb-24">
+        <div id="experience" className="scroll-mt-[120px] mb-24">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +63,7 @@ export default function ExperiencePage() {
         </div>
 
         {/* Skills Section */}
-        <div id="skills" className="scroll-mt-40">
+        <div id="skills" className="scroll-mt-[120px]">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}

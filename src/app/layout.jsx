@@ -32,7 +32,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className="overflow-x-hidden">
+    <html lang="en" suppressHydrationWarning className="overflow-x-clip">
       <head>
         <link
           rel="preconnect"
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
         >
           <SpotlightCursor />
           <BackToTop />
-          <div className="relative min-h-screen flex flex-col overflow-x-hidden">
+          <div className="relative min-h-screen flex flex-col">
             <Navbar />
             <main className="flex-1">{children}</main>
             <Footer />
